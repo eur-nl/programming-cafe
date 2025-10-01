@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>EPC</title>
-    <link>http://localhost:4593/</link>
+    <link>https://eur-nl.github.io/programming-cafe/</link>
     <description>Recent content on EPC</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:4593/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://eur-nl.github.io/programming-cafe/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contact us!</title>
-      <link>http://localhost:4593/contact/</link>
+      <link>https://eur-nl.github.io/programming-cafe/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4593/contact/</guid>
+      <guid>https://eur-nl.github.io/programming-cafe/contact/</guid>
       <description>&lt;h1 id=&#34;we-are-here-to-help-you-improve-your-programming&#34;&gt;We are here to help you improve your programming&lt;/h1&gt;&#xA;&lt;p&gt;Are you curious about something? Do you have some kind of problem with the Café?&lt;/p&gt;&#xA;&lt;p&gt;Please feel free to contact us!&lt;/p&gt;&#xA;&lt;br&gt;&#xA;&lt;br&gt;</description>
     </item>
     <item>
       <title>FAQ</title>
-      <link>http://localhost:4593/faq/</link>
+      <link>https://eur-nl.github.io/programming-cafe/faq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4593/faq/</guid>
+      <guid>https://eur-nl.github.io/programming-cafe/faq/</guid>
       <description>&lt;h2 id=&#34;1-who-is-it-for&#34;&gt;1. Who is it for?&lt;/h2&gt;&#xA;&lt;p&gt;The programming café is for researchers of all levels of programming, regardless of their field of study or level of experience.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Beginner programmers can find a supportive environment that will connect you with like-minded, but also help you learn how to code and get the help they need.&lt;/li&gt;&#xA;&lt;li&gt;Advanced programmers can share their expertise and connect with other skilled programmers to stay up-to-date with the latest trends.&lt;/li&gt;&#xA;&lt;li&gt;Interdisciplinary researchers can find a supportive and collaborative environment here where they can learn programming skills that are relevant to their research&lt;/li&gt;&#xA;&lt;li&gt;Data specialists can find a platform to connect with other researchers who share their interest, learn from each other and collaborate on data-driven research projects here&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;2-why-should-i-invest-my-time&#34;&gt;2. Why should I invest my time?&lt;/h2&gt;&#xA;&lt;p&gt;Programming can be a daunting task, especially when you are just starting out, but it does not have to be a lonely one. If you help us building the community, we can support each other, learn from each other and grow together.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Programming Café on 18th November 2025</title>
-      <link>http://localhost:4593/post/1/01/01/2025-09-26-programming-caf-on-18th-november-2025/</link>
+      <link>https://eur-nl.github.io/programming-cafe/post/1/01/01/2025-09-26-programming-caf-on-18th-november-2025/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4593/post/1/01/01/2025-09-26-programming-caf-on-18th-november-2025/</guid>
+      <guid>https://eur-nl.github.io/programming-cafe/post/1/01/01/2025-09-26-programming-caf-on-18th-november-2025/</guid>
       <description>Our first Programming Café has been scheduled!</description>
     </item>
     <item>
       <title>Team</title>
-      <link>http://localhost:4593/team/</link>
+      <link>https://eur-nl.github.io/programming-cafe/team/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4593/team/</guid>
-      <description>&lt;h1 id=&#34;our-team&#34;&gt;Our team&lt;/h1&gt;&#xA;&lt;p&gt;As we are just starting the initiative, our team is rather small. However, we are looking for volunteers or staff members that want to help us with the Programming Cafés!&lt;/p&gt;&#xA;&lt;h2 id=&#34;our-team-members&#34;&gt;Our team members&lt;/h2&gt;&#xA;&lt;h3 id=&#34;helena-wedig-sheher&#34;&gt;Helena Wedig (she/her)&lt;/h3&gt;&#xA;&lt;img alt=&#34;&#34; src=&#34;http://localhost:4593/images/team/helena.jpeg&#34; style=&#34;float:left;width:15%;height:15%&#34;&gt; &#xA;&lt;p&gt; Helena Wedig works since June 2025 as Research Software and Interoperability Training Lead at ERS, where she leads efforts to enhance research software skills across the university. She is currently working on a NWO-funded project aimed at developing a comprehensive and integrated Research Software training program at EUR.&#xA;In this role, Helena is responsible for coordinating existing training offerings and designing new ones. &#xA;&lt;br&gt;&#xA;&lt;b&gt;Background: &lt;/b&gt;After completing her studies in Computational Linguistics at Ruhr University Bochum in 2019, she worked as a Research Engineer at Fraunhofer IAIS in Germany. In 2021, she began her PhD in Linguistics at the University of Antwerp (Belgium), which she successfully completed in March 2025. In her PhD research, she compiled, processed, and annotated three language corpora and conducted statistical analyses to identify language-dependent features within them. Her programming languages of choice are R and Python.&lt;/p&gt;</description>
+      <guid>https://eur-nl.github.io/programming-cafe/team/</guid>
+      <description>&lt;h1 id=&#34;our-team&#34;&gt;Our team&lt;/h1&gt;&#xA;&lt;p&gt;As we are just starting the initiative, our team is rather small. However, we are looking for volunteers or staff members that want to help us with the Programming Cafés!&lt;/p&gt;&#xA;&lt;h2 id=&#34;our-team-members&#34;&gt;Our team members&lt;/h2&gt;&#xA;&lt;h3 id=&#34;helena-wedig-sheher&#34;&gt;Helena Wedig (she/her)&lt;/h3&gt;&#xA;&lt;img alt=&#34;&#34; src=&#34;https://eur-nl.github.io/programming-cafe/images/team/helena.jpeg&#34; style=&#34;float:left;width:15%;height:15%&#34;&gt; &#xA;&lt;p&gt; Helena Wedig works since June 2025 as Research Software and Interoperability Training Lead at ERS, where she leads efforts to enhance research software skills across the university. She is currently working on a NWO-funded project aimed at developing a comprehensive and integrated Research Software training program at EUR.&#xA;In this role, Helena is responsible for coordinating existing training offerings and designing new ones. &#xA;&lt;br&gt;&#xA;&lt;b&gt;Background: &lt;/b&gt;After completing her studies in Computational Linguistics at Ruhr University Bochum in 2019, she worked as a Research Engineer at Fraunhofer IAIS in Germany. In 2021, she began her PhD in Linguistics at the University of Antwerp (Belgium), which she successfully completed in March 2025. In her PhD research, she compiled, processed, and annotated three language corpora and conducted statistical analyses to identify language-dependent features within them. Her programming languages of choice are R and Python.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
