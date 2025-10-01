@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on EPC</title>
-    <link>https://eur-nl.github.io/programming-cafe/authors/</link>
+    <link>/authors/index.html</link>
     <description>Recent content in Authors on EPC</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://eur-nl.github.io/programming-cafe/authors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
