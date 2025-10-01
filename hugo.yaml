@@ -1,4 +1,4 @@
-baseurl: http://localhost:4593/
+baseurl: https://eur-nl.github.io/programming-cafe
 title: EPC
 theme: hugo-universal-theme
 languageCode: en-us
