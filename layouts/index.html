@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  <head>
+    {{ partial "headers.html" . }}
+    {{ partial "custom_headers.html" . }}
+  </head>
+  <style>
+    .myDiv {
+      width:70%;
+      margin:auto;
+      text-align: justify
+    }
+    img {
+  border-radius: 8px;
+  margin-right: 20px; 
+  display: inline-block;
+  float:left;
+}
+}
+  </style>
+
+  <body>
+    <div id="all">
+
+        {{ partial "top.html" . }}
+
+        {{ partial "nav.html" . }}
+
+        {{ partial "carousel.html" . }}
+        
+        <div id="who-are-we" class="myDiv" >
+          <h2>We are excited to invite all EUR researchers to the first Programming Café at Erasmus University Rotterdam! Whether you're a seasoned coder or just starting your programming journey, this event is designed to bring together enthusiasts from all levels in a relaxed and collaborative environment.</h2>
+            <p></br></p>
+            </div>
+
+        <div id="what-to-expect" class="myDiv">
+          <h2>What can you expect?</h2>
+          <p>In the Programming Café (Code together, feel empowered), you can enhance your programming skills through practical experience and meet like-minded individuals and potential collaborators. Use this opportunity to discover new tools and techniques that can aid your research!</p>
+            <li><b>Hands-On Workshops:</b> Dive into interactive sessions tailored for both beginners and advanced programmers. Learn new skills, explore different programming languages, and tackle exciting challenges. Dive into interactive sessions tailored for both beginners and advanced programmers. Learn new skills, explore different programming languages, and tackle exciting challenges.</li>
+            <li><b>Networking Opportunities:</b> Connect with fellow students, researchers, and staff who share your passion for programming. Exchange ideas, collaborate on projects, and expand your professional network. </li>
+            <li><b>Expert Guidance: </b>Benefit from the expertise of our experienced facilitators.</li>
+            <li><b>Relaxed Atmosphere: </b>Enjoy a casual setting where you can work at your own pace, sip coffee, snack, and engage in stimulating conversations.</li>
+          </ul>
+        </div>
+        
+        <div id="theme" class="myDiv">
+        <h2>Topic/Theme</h2>
+        <p>Each Programming Café has a specific topic or theme. We will offer a short presentation or demonstration (max 30min) about the chosen topic at the beginning of the Café. Interested in something specific? Please send an email to Helena Wedig!
+        </p>
+        <br>
+        </div>
+        
+        <div id="who-can-join" class="myDiv">
+          <h2>Who can join the Programming Café?</h2>
+          <p>The event is open to researchers and graduate students from Erasmus University Rotterdam.</p>
+          </p>
+          <br>
+        </div>
+
+        {{ partial "features.html" . }}
+
+        {{ partial "testimonials.html" . }}
+
+        {{ partial "see_more.html" . }}
+
+        {{ partial "recent_posts.html" . }}
+
+        {{ partial "clients.html" . }}
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

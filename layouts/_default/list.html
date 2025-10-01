@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  <head>
+    {{ partial "headers.html" . }}
+    {{ partial "custom_headers.html" . }}
+  </head>
+  <style>
+  img {
+  border-radius: 8px;
+  margin-right: 20px; 
+  display: inline-block;
+  float:left;
+}
+</style>
+
+  <body>
+
+    <div id="all">
+
+        {{ partial "top.html" . }}
+
+        {{ partial "nav.html" . }}
+
+        {{ partial "breadcrumbs.html" . }}
+
+        <div id="content">
+            <div class="container">
+                <div class="row">
+                  
+                     <!-- *** LEFT COLUMN *** -->
+                    <div class="col-md-2" id="blog-listing-medium">
+                    </div>
+                    <!-- /.col-md-1.5 -->
+                    <!-- *** LEFT COLUMN END *** -->
+                    
+                    <!-- *** MIDDLE COLUMN ***      
+      _________________________________________________________ -->
+
+                    <div class="col-md-12" id="blog-listing-medium">
+
+                        {{ $paginator := .Paginate (where .Data.Pages "Type" "in" .Site.Params.mainSections) }}
+                        {{ range $paginator.Pages }}
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-3">
+                                  <div class="image">
+                                      <a href="{{ .Permalink }}">
+                                          {{ if .Params.banner }}
+                                          <img src="{{ .Params.banner | relURL }}" class="img-responsive" alt="" />
+                                          {{ else }}
+                                          <img src="{{ "images/without_frame.jpg" | relURL }}" class="img-responsive" alt="" />
+                                          {{ end }}
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          {{ if isset .Params "authors" }}
+					  {{ i18n "authorBy" }} {{ range $index, $author := .Params.authors }}{{ if $index }}, {{ end }}<a href="{{ (printf "%s/%s" ("authors" | relLangURL) ($author | urlize)) }}">{{ $author }}</a>{{ end }}
+                                          {{ end }}
+                                          {{ if isset .Params "categories" }}
+                                          {{ if gt (len .Params.categories) 0 }}
+                                          in 
+                                          {{ range $index, $category := .Params.categories }}{{ if $index }}, {{ end }}
+                                              <a href="{{ "categories/" | relLangURL }}{{ . | urlize | lower }}">{{ $category }}</a>{{ end }}
+                                          {{ end }}
+                                          {{ end }}
+
+                                        </p>
+                                        {{ if isset .Params "date" }}
+
+                                        {{ $createdAt := .Date.Format .Site.Params.date_format }}
+                                        {{ range $index, $month := slice "January" "February" "March" "April" "May" "June" "July" "August" "September" "October" "November" "December" }}
+                                            {{ $createdAt = replace $createdAt $month (i18n $month) }}
+                                        {{ end }}
+
+                                        <p class="date-comments">
+                                            <a href="{{ .Permalink }}"><i class="far fa-calendar"></i> {{ $createdAt }}</a>
+                                        </p>
+                                        {{ end }}
+                                    </div>
+                                    {{ if not .Site.Params.recent_posts.hide_summary }}
+                                    <p class="intro">{{ .Summary }}</p>
+                                    <p class="read-more"><a href="{{ .Permalink }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a>
+                                    </p>
+                                    {{ end }}
+                                </div>
+                            </div>
+                        </section>
+                        {{ end }}
+                        
+                    <!-- /.col-md-9 -->
+
+                    <!-- *** MIDDLE COLUMN END *** -->
+
+                    <!-- *** RIGHT COLUMN ***
+       _________________________________________________________ -->
+
+                    <div class="col-md-2">
+
+                        <!-- *** MENUS AND WIDGETS *** -->
+
+                        <!-- {{ partial "sidebar.html" . }} -->
+
+                        <!-- *** MENUS AND FILTERS END *** -->
+
+                    </div>
+                    <!-- /.col-md-1 -->
+
+                    <!-- *** RIGHT COLUMN END *** -->
+
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+            
+            <!-- Pagination -->
+            <div align="center">
+                {{partial "pagination.html" .}}  
+            </div>
+            <!-- /.Pagination -->
+            
+        </div>
+        <!-- /#content -->
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

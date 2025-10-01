@@ -1,0 +1,137 @@
+baseurl: http://localhost:4593/
+title: EPC
+theme: hugo-universal-theme
+languageCode: en-us
+defaultContentLanguage: en
+summaryLength: 70
+pluralizelisttitles: no
+#services:
+#  disqus:
+#    shortname: ''
+#  googleAnalytics:
+#    id: ''
+pagination:
+  pagerSize: 20
+menu:
+  main:
+    - identifier: menu.home
+      name: Home
+      url: /
+      weight: 1
+    - name: 'Team'
+      #identifier: section.about
+      url: /team
+      weight: 2
+    #- name: 'Team'
+    #  parent: section.about
+    #  weight: 2
+    # url: /team
+    - name: 'News'
+      url: /categories/news/
+      weight: 3
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 5
+    - identifier: 'FAQ'
+      name: faq
+      url: /faq/
+      weight: 4
+  topbar:
+    - name: Email
+      pre: <i class='fas fa-2x fa-envelope'></i>
+      url: mailto:helena.wedig@eur.nl
+      weight: 5
+params:
+  about_us: <p>The Erasmian Programming Café is a initiative by the Erasmus Engangement and Research Services to facilitate programming at EUR.</p>
+  address: "<p class=\"text-uppercase\"><strong>Erasmus University Rotterdam</strong>\n<br>Burgemeester Oudlaan 50\n<br>3062 PA Rotterdam\n
+    \       <br>\n<strong>Netherlands</strong>\n</p>\n"
+  author: Helena Wedig
+  carouselCustomers:
+    auto_play: no
+    enable: no
+    items: 6
+    pagination_speed: 1000
+    slide_speed: 2000
+  carouselHomepage:
+    auto_play: no
+    enable: yes
+    pagination_speed: 1000
+    slide_speed: 2000
+  carouselTestimonials:
+    auto_play: no
+    items: 4
+    pagination_speed: 1000
+    slide_speed: 2000
+  clients:
+    enable: no
+    subtitle: ''
+    title: Our Clients
+  contact_form_ajax: no
+  contact_url: /contact
+  copyright: "&copy; 2025 Erasmian Programming Café. All rights reserved."
+  date_format: January 2, 2006
+  default_sharing_image: /images/icon.png
+  defaultDescription: Website of the Erasmian Programming Café
+  defaultKeywords:
+    - Programming Cafe
+    - Rotterdam
+  disabled_logo: no
+  dropdown_mouse_over: no
+  enableGoogleMaps: no
+  enableRecaptchaInContactForm: no
+  facebook_site: ''
+  features:
+    cols: 3
+    enable: no
+  footer:
+    recent_posts:
+      enable: yes
+  formspree_action: https://formspree.io/sample/of/endpoint
+  googleMapsApiKey: AIzaSyAv7Sza8NSp9_l_g8G2vlo0H4ydEPn_2jY
+  googleRecaptchaKey: site_key_for_google_recaptcha
+  #latitude: '-12.043333'
+  logo: images/icon.jpg
+  logo_small: images/icon.jpg
+  logo_text: OSCR
+  #longitude: '-77.028333'
+  mainSections: post
+  recent_posts:
+    enable: yes
+    hide_summary: no
+    subtitle: See here the latest news about our events!
+    title: Recent updates
+  see_more:
+    enable: no
+    icon: fa-brands fa-readme
+    link_text: See more
+    link_url: 
+    subtitle:  
+    title:
+  style: turquoise
+  testimonials:
+    enable: no
+    subtitle: These were the last sessions that we offered!
+    title: Events
+  topbar:
+    enable: yes
+    text: ""
+  twitter_site: NA
+  viewMorePostLink: /post/
+  widgets:
+    categories: no
+    search: no
+    tags: yes
+permalinks:
+  post: /post/:year/:month/:day/:contentbasename/
+taxonomies:
+  author: authors
+  category: categories
+  tag: tags
+  
+  
+  
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
