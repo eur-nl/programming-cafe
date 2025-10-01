@@ -2,8 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/authors/index.html</loc>
-  </url><url>
     <loc>/categories/index.html</loc>
   </url><url>
     <loc>/contact.html</loc>
@@ -17,8 +15,6 @@
     <loc>/post/index.html</loc>
   </url><url>
     <loc>/post/programming-caf-on-18th-november-2025.html</loc>
-  </url><url>
-    <loc>/tags/index.html</loc>
   </url><url>
     <loc>/team.html</loc>
   </url>
