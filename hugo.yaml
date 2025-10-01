@@ -5,6 +5,9 @@ languageCode: en-us
 defaultContentLanguage: en
 summaryLength: 70
 pluralizelisttitles: no
+relativeURLs: true
+canonifyURLs: true
+uglyURLs: true
 #services:
 #  disqus:
 #    shortname: ''
