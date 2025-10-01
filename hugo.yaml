@@ -126,7 +126,7 @@ params:
     search: no
     tags: yes
 permalinks:
-  post: /post/:year/:month/:day/:contentbasename/
+  post: "/post/:slug/"
 taxonomies:
   author: authors
   category: categories
