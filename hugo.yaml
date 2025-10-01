@@ -25,7 +25,7 @@ menu:
       url: /Team
       weight: 2
     - name: 'News'
-      url: /categories/news/
+      url: /categories/news
       weight: 3
     - identifier: contact
       name: Contact
@@ -123,10 +123,8 @@ params:
 permalinks:
   post: "/post/:slug/"
 taxonomies:
-  author: authors
   category: categories
-  tag: tags
-  
+
   
   
 markup:
