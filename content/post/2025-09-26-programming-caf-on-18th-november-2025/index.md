@@ -8,7 +8,7 @@ banner: /images/icon.jpg
 summary: "Our first Programming Café has been scheduled!"
 ---
 
-<img src= "images/icon_space.jpg" style = "width:20%;height:20%">
+<img src= "/images/icon_space.jpg" style = "width:20%;height:20%">
 
 <p>
 
