@@ -22,23 +22,18 @@ menu:
       url: /
       weight: 1
     - name: 'Team'
-      #identifier: section.about
-      url: /team
+      url: /Team
       weight: 2
-    #- name: 'Team'
-    #  parent: section.about
-    #  weight: 2
-    # url: /team
     - name: 'News'
       url: /categories/news/
       weight: 3
     - identifier: contact
       name: Contact
-      url: /contact/
+      url: /Contact
       weight: 5
     - identifier: 'FAQ'
       name: faq
-      url: /faq/
+      url: /FAQ
       weight: 4
   topbar:
     - name: Email
@@ -58,7 +53,7 @@ params:
     slide_speed: 2000
   carouselHomepage:
     auto_play: no
-    enable: yes
+    enable: no
     pagination_speed: 1000
     slide_speed: 2000
   carouselTestimonials:
