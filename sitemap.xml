@@ -2,24 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:4593/authors/</loc>
+    <loc>https://eur-nl.github.io/programming-cafe/authors/</loc>
   </url><url>
-    <loc>http://localhost:4593/categories/</loc>
+    <loc>https://eur-nl.github.io/programming-cafe/categories/</loc>
   </url><url>
-    <loc>http://localhost:4593/contact/</loc>
+    <loc>https://eur-nl.github.io/programming-cafe/contact/</loc>
   </url><url>
-    <loc>http://localhost:4593/</loc>
+    <loc>https://eur-nl.github.io/programming-cafe/</loc>
   </url><url>
-    <loc>http://localhost:4593/faq/</loc>
+    <loc>https://eur-nl.github.io/programming-cafe/faq/</loc>
   </url><url>
-    <loc>http://localhost:4593/categories/news/</loc>
+    <loc>https://eur-nl.github.io/programming-cafe/categories/news/</loc>
   </url><url>
-    <loc>http://localhost:4593/post/</loc>
+    <loc>https://eur-nl.github.io/programming-cafe/post/</loc>
   </url><url>
-    <loc>http://localhost:4593/post/1/01/01/2025-09-26-programming-caf-on-18th-november-2025/</loc>
+    <loc>https://eur-nl.github.io/programming-cafe/post/1/01/01/2025-09-26-programming-caf-on-18th-november-2025/</loc>
   </url><url>
-    <loc>http://localhost:4593/tags/</loc>
+    <loc>https://eur-nl.github.io/programming-cafe/tags/</loc>
   </url><url>
-    <loc>http://localhost:4593/team/</loc>
+    <loc>https://eur-nl.github.io/programming-cafe/team/</loc>
   </url>
 </urlset>
