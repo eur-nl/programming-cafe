@@ -1,5 +1,5 @@
-baseurl: https://eur-nl.github.io/programming-cafe
-title: EPC
+baseurl: https://eur-nl.github.io/programming-cafe/
+title: Erasmian Programming Café
 theme: hugo-universal-theme
 languageCode: en-us
 defaultContentLanguage: en
