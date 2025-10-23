@@ -13,9 +13,9 @@ The following content was and is continuously inspired by our Café colleagues f
 ## Books and Papers on Programming
 
 - [**Guide for Reproducible Coding**](https://book.the-turing-way.org/reproducible-research/reproducible-research/) This guide gives insights into version control, licensing, and code documentation and can help you to improve the reproducibility of your research project!
-- [**Paper on good enough practices for scientific programming**](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510) and (the fitting lesson on this topic from the Carepentries)[https://carpentries-lab.github.io/good-enough-practices/03-software.html] These resources can help you to better structure your project and good practices right from the start.
+- [**Paper on good enough practices for scientific programming**](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510) and [the fitting lesson on this topic from the Carepentries](https://carpentries-lab.github.io/good-enough-practices/03-software.html) These resources can help you to better structure your project and good practices right from the start.
 - [**The Hitchhiker’s Guide to Python**](https://docs.python-guide.org) This handbook covers a wide range of Python-related topics.
-- [**What They Forgot to Teach You About R&*](https://rstats.wtf) Interesting R content that goes beyond data analysis.
+- [**What They Forgot to Teach You About R**](https://rstats.wtf) Interesting R content that goes beyond data analysis.
 - [**Book about Computational Thinking for Social Scientists**](https://jaeyk.github.io/comp_thinking_social_science/) This website is designed to help social science researchers to learn how to think computationally.
 
 ## Workshops
