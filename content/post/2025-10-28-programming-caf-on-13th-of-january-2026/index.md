@@ -6,6 +6,7 @@ categories: [news]
 tags: []
 banner: /images/icon.jpg
 summary: "Our third Programming Café has been scheduled!"
+weight: 3
 ---
 
 

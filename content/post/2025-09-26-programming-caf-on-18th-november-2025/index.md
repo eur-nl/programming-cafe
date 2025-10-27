@@ -6,6 +6,7 @@ categories: [news]
 tags: []
 banner: /images/icon.jpg
 summary: "Our first Programming Café has been scheduled!"
+weight: 1
 ---
 
 <img src= "/programming-cafe/images/icon_space.jpg" style = "width:20%;height:20%">
