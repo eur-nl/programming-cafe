@@ -1,7 +1,6 @@
 ---
 title: Programming Café on 18th November 2025
 author: Package Build
-date: '2025-11-18'
 slug: programming-caf-on-18th-november-2025
 categories: [news]
 tags: []
