@@ -4,13 +4,13 @@ author: Package Build
 slug: programming-caf-on-13th-of-january-2026
 categories: [news]
 tags: []
-banner: /images/logo_3.jpg
+banner: /images/Logo_3.jpg
 summary: "Our third Programming Café has been scheduled!"
 weight: 3
 ---
 
 
-<img src= "/programming-cafe/images/logo_3.jpg" style = "width:20%;height:20%">
+<img src= "/programming-cafe/images/Logo_3.jpg" style = "width:20%;height:20%">
 
 <p>
 

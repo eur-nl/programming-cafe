@@ -4,13 +4,13 @@ author: Package Build
 slug: programming-caf-on-9th-of-december-2025
 categories: [news]
 tags: []
-banner: /images/logo_2.jpg
+banner: /images/Logo_2.jpg
 summary: "Our second Programming Café has been scheduled!"
 weight: 2
 ---
 
 
-<img src= "/programming-cafe/images/logo_2.jpg" style = "width:20%;height:20%">
+<img src= "/programming-cafe/images/Logo_2.jpg" style = "width:20%;height:20%">
 
 <p>
 
