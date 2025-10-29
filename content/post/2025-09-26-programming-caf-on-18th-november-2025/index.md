@@ -4,12 +4,12 @@ author: Package Build
 slug: programming-caf-on-18th-november-2025
 categories: [news]
 tags: []
-banner: /images/icon.jpg
+banner: /images/logo_1.jpg
 summary: "Our first Programming Café has been scheduled!"
 weight: 1
 ---
 
-<img src= "/programming-cafe/images/Logo_celeb.jpg" style = "width:20%;height:20%">
+<img src= "/programming-cafe/images/logo_1.jpg" style = "width:20%;height:20%">
 
 <p>
 
