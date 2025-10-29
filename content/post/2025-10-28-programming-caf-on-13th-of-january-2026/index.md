@@ -10,7 +10,7 @@ weight: 3
 ---
 
 
-<img src= "/programming-cafe/images/icon_space.jpg" style = "width:20%;height:20%">
+<img src= "/programming-cafe/images/Logo_3.jpg" style = "width:20%;height:20%">
 
 <p>
 
