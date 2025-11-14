@@ -15,7 +15,7 @@ weight: 1
 
 ### The new academic year just began, and we are coming with some exciting news!
 
-We will host our first Programming Café on 18th of November at 11:00 (until 13:00) in Mandeville T3-13.
+We will host our [first Programming Café on 18th of November at 11:00 (until 13:00) in Mandeville T3-13](https://my.eur.nl/en/events/programming-cafe-best-practices-research-software-2025-11-18).
 <br>
 #### What can you expect?
 Our first Café (Code along, feel empowered) will be hosted together with support staff from the [Programming Café project](https://tdcc.nl/projects/tdcc-nes-projects/the-cafe-code-along-feel-empowered-method/). Together with them (and you), we will kickstart a new national initiative of Programming Cafés.
@@ -31,6 +31,9 @@ The second part of the Café is designed to help you with your projects! Any que
 - **11:00-12:00** Live Coding
 - **12:00-12:15** Break & Begin Lunch
 - **12:15-13:00** Time to eat, collaborate, ask question and try out your new skills
+
+### Registrations
+Please register [here](https://eur-nl.libcal.com/event/4449294)!
 
 ### Preparation
 Bring your own laptop!
