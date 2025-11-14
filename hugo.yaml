@@ -27,6 +27,9 @@ menu:
     - name: 'News'
       url: /categories/news
       weight: 3
+    - name: 'Archive'
+      url: /categories/archive
+      weight: 3
     - name: 'Resources'
       url: /resources
       weight: 4

@@ -20,12 +20,12 @@ We will host our second Programming Café on 9th of December at 11:00 (until 13:
 <br>
 
 #### Topic
-The topic of the second session still needs to be decided. After the initial presentation, you have time to ask question.
+The topic of the second session is "Automating Tasks with Python: Introduction to Scripting". After the initial live coding session, you have time to ask question.
 The second part of the Café is designed to help you with your projects! Any questions in regard to how to use the learned knowledge for your own code? Struggling with a bug? Need some brainstorming with colleagues? We got your back!
 
 ## Programme
 - **10:50-11:00** Walk-in
-- **11:00-12:00** Live Coding or Presentation
+- **11:00-12:00** Live Coding
 - **12:00-12:15** Break & Begin Lunch
 - **12:15-13:00** Time to eat, collaborate, ask question and try out your new skills
 
@@ -33,7 +33,7 @@ The second part of the Café is designed to help you with your projects! Any que
 Bring your own laptop!
 
 ### Extras
-We will offer some snacks!
+We will offer Pizza!
 
 ### Prior meeting keeps you from joining at 11:00?
 No problem! Join us after your meeting and we will bring you up-to-date. We will also upload the material after the session.
