@@ -24,6 +24,8 @@ Our first Café (Code along, feel empowered) will be hosted together with suppor
 The topic of the first session will be "How to approach programming as a Researcher". We will focus on best practices in how to start thinking like a computer, how to structure your folder and your code and get a glimpse on best programming practices. After the initial presentation, you have time to ask question.
 The second part of the Café is designed to help you with your projects! Any questions in regard to how to use the learned knowledge for your own code? Struggling with a bug? Need some brainstorming with colleagues? We got your back!
 
+[Here](https://codeberg.org/charliegreene/research-software-best-practice) you can find the link to the repository.
+
 ## Programme
 - **10:50-11:00** Walk-in
 - **11:00-12:00** Live Coding
