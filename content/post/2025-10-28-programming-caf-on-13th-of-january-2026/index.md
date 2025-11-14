@@ -23,6 +23,8 @@ We will host our third Programming Café on 13th of January at 11:00 (until 13:0
 The topic of the second session still needs to be decided. After the initial presentation, you have time to ask question.
 The second part of the Café is designed to help you with your projects! Any questions in regard to how to use the learned knowledge for your own code? Struggling with a bug? Need some brainstorming with colleagues? We got your back!
 
+[Here](https://codeberg.org/charliegreene/research-software-best-practice) you can find the link to the repository.
+
 ## Programme
 - **10:50-11:00** Walk-in
 - **11:00-12:00** Live Coding or Presentation
