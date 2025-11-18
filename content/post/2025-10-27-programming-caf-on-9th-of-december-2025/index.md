@@ -24,13 +24,15 @@ The topic of the second session is "Automating Tasks with Python: Introduction t
 The second part of the Café is designed to help you with your projects! Any questions in regard to how to use the learned knowledge for your own code? Struggling with a bug? Need some brainstorming with colleagues? We got your back!
 
 ## Programme
-- **10:50-11:00** Walk-in
 - **11:00-12:00** Live Coding
 - **12:00-12:15** Break & Begin Lunch
 - **12:15-13:00** Time to eat, collaborate, ask question and try out your new skills
 
 ### Preparation
 Bring your own laptop!
+
+### Registration
+Please register [here](https://eur-nl.libcal.com/event/4460590)!
 
 ### Extras
 We will offer Pizza!
