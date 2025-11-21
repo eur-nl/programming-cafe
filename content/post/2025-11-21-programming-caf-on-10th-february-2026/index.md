@@ -1,22 +1,23 @@
 ---
-title: Programming Café on 13th of January 2026
+title: Programming Café on 10th February 2026
 author: Package Build
-slug: programming-caf-on-13th-of-january-2026
+date: '2026-11-21'
+slug: programming-caf-on-10th-february-2026
 categories: [news]
 tags: []
-banner: /images/Logo_3.jpg
-summary: "Our third Programming Café has been scheduled!"
-weight: 3
+banner: /images/logo_no4.jpg
+summary: "Another Programming Café has been scheduled!"
+weight: 4
 ---
 
 
-<img src= "/programming-cafe/images/Logo_3.jpg" style = "width:20%;height:20%">
+<img src= "/programming-cafe/images/logo_no4.jpg" style = "width:20%;height:20%">
 
 <p>
 
-### Start the year with some programming!
+### Join us for more programming!
 
-We will host our third Programming Café on 13th of January at 11:00 (until 13:00).
+We will host our fourth Programming Café on 10th of Feburary at 11:00 (until 13:00).
 <br>
 
 #### Topic
