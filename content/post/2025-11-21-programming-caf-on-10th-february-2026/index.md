@@ -10,7 +10,6 @@ summary: "Another Programming Café has been scheduled!"
 weight: 4
 ---
 
-
 <img src= "/programming-cafe/images/logo_no4.jpg" style = "width:20%;height:20%">
 
 <p>
