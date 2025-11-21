@@ -33,11 +33,14 @@ menu:
     - identifier: contact
       name: Contact
       url: /Contact
-      weight: 6
+      weight: 7
     - identifier: 'FAQ'
       name: faq
       url: /FAQ
       weight: 5
+    - name: 'Archive'
+      url: /categories/archive
+      weight: 6
   topbar:
     - name: Email
       pre: <i class='fas fa-2x fa-envelope'></i>
