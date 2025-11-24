@@ -20,7 +20,7 @@ We will host our second Programming Café on 9th of December at 11:00 (until 13:
 <br>
 
 #### Topic
-The topic of the second session is "Automating Tasks with Python: Introduction to Scripting". After the initial live coding session, you have time to ask question.
+The topic of the second session is "Automating Tasks with Python: Introduction to Scripting". In this Programming Café session, we’ll explore the fundamentals of scripting in Python to streamline your research tasks. You’ll learn how to approach automation effectively, including organizing and renaming your files and writing simple scripts to work with your data. 
 The second part of the Café is designed to help you with your projects! Any questions in regard to how to use the learned knowledge for your own code? Struggling with a bug? Need some brainstorming with colleagues? We got your back!
 
 ## Programme
@@ -35,7 +35,7 @@ Bring your own laptop!
 Please register [here](https://eur-nl.libcal.com/event/4460590)!
 
 ### Extras
-We will offer Pizza!
+We will offer snacks!
 
 ### Prior meeting keeps you from joining at 11:00?
 No problem! Join us after your meeting and we will bring you up-to-date. We will also upload the material after the session.
