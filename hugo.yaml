@@ -24,7 +24,7 @@ menu:
     - name: 'Team'
       url: /Team
       weight: 2
-    - name: 'News'
+    - name: 'Upcoming Events'
       url: /categories/news
       weight: 3
     - name: 'Resources'
@@ -38,7 +38,7 @@ menu:
       name: faq
       url: /FAQ
       weight: 5
-    - name: 'Archive'
+    - name: 'Previous Events'
       url: /categories/archive
       weight: 6
   topbar:
