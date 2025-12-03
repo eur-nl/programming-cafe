@@ -18,7 +18,7 @@ I hope that I can show you some tricks for these tasks today.
 Did everyone install Python ? Who needs help ?
 I would recommend the use of PyCharm!
 - Please create a copy of the files that you want to work on.
-- You can also download test files extracted from the [German Summary Corpus](https://clarin.eurac.edu/repository/xmlui/handle/20.500.12124/81) [here](data.zip)
+- You can also download test files extracted from the [German Summary Corpus](https://clarin.eurac.edu/repository/xmlui/handle/20.500.12124/81) [here](extras/data.zip)
 
 # File Management
 

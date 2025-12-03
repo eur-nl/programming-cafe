@@ -24,7 +24,7 @@ The topic of the second session is "Automating Tasks with Python: Introduction t
 The second part of the Café is designed to help you with your projects! Any questions in regard to how to use the learned knowledge for your own code? Struggling with a bug? Need some brainstorming with colleagues? We got your back!
 
 ## Lesson script
-Find the lesson script [here](lesson_2.md)
+Find the lesson script [here](./lesson_2.html)
 ## Programme
 - **11:00-12:00** Live Coding
 - **12:00-12:15** Break & Begin Lunch
