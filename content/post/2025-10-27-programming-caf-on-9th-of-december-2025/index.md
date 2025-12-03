@@ -23,6 +23,8 @@ We will host our second Programming Café on 9th of December at 11:00 (until 13:
 The topic of the second session is "Automating Tasks with Python: Introduction to Scripting". In this Programming Café session, we’ll explore the fundamentals of scripting in Python to streamline your research tasks. You’ll learn how to approach automation effectively, including organizing and renaming your files and writing simple scripts to work with your data. 
 The second part of the Café is designed to help you with your projects! Any questions in regard to how to use the learned knowledge for your own code? Struggling with a bug? Need some brainstorming with colleagues? We got your back!
 
+## Lesson script
+Find the lesson script [here](lesson_2.md)
 ## Programme
 - **11:00-12:00** Live Coding
 - **12:00-12:15** Break & Begin Lunch
