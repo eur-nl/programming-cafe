@@ -6,7 +6,6 @@ categories: archive
 tags: []
 banner: /images/logo_1.jpg
 summary: Our first Programming Café has been scheduled!
-weight: 100
 ---
 
 <img src= "/programming-cafe/images/logo_1.jpg" style = "width:20%;height:20%">
