@@ -2,7 +2,7 @@
 title: "Programming Café on 18th November 2025"
 author: "Package Build"
 slug: "programming-caf-on-18th-november-2025"
-categories: archive
+categories: [archive]
 tags: []
 banner: /images/logo_1.jpg
 summary: Our first Programming Café has been scheduled!
