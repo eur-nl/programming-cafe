@@ -18,20 +18,26 @@ I hope that I can show you some tricks for these tasks today.
 Did everyone install Python ? Who needs help ?
 I would recommend the use of PyCharm!
 - Please create a copy of the files that you want to work on.
-- You can also download test files extracted from the [German Summary Corpus](https://clarin.eurac.edu/repository/xmlui/handle/20.500.12124/81) [here](extras/data.zip)
+- You can also download test files extracted from the [German Summary Corpus](https://clarin.eurac.edu/repository/xmlui/handle/20.500.12124/81) (Wedig & Strobl, 2024) **[here](extras/data.zip)**. 
+- Create a folder "data" in your projects and a subfolder "files" in which you paste your files
 
 # File Management
 
-## Generate a file structur automatically
+During a busy period like a PhD, tasks such as tracking existing files or creating backups may be overlooked. Python can help automate these tasks, allowing you to complete them with the press of a button.
+
+## Generate a file structure automatically
+
+At the beginning of your project (or at a later stage), you might wonder how to best structure your files. This code snippet allows you to automate the process. **Be aware: data/copy will be created for this session today and is not typical in a research project**
 ```python
 import os #package that gives us access to the operating system
 
-folders = ["data/raw", "data/processed", "data/copy" "scripts", "results"]
+folders = ["data/raw", "data/processed", "data/copy" "scripts", "results"] # Here you can define how you would like to name your folders
+# Create folders
 for folder in folders:
     os.makedirs(folder, exist_ok=True)
 ```
 ## Get an overview of all files in one folder
-To get an overview of all files that exist in one folder, you can use the listdir() function.
+To get an overview of all the files in a folder, you can use the listdir() function.
 
 ```python
 import os
@@ -40,13 +46,12 @@ import os
 working_dir = os.getcwd()
 path = os.path.join(working_dir, "data", "files")
 
-print(os.listdir(path))
+print(os.listdir(path)) # print allows us to see the results on the console.
 ```
-Here print allows us to see the results on the console.
 
-## Copying files e.g. to create a backup
+## Copying files: e.g., to create a backup
 
-You may also be in a situation where you would like to create copies of your files, for example, as backup. For that, we can use the shutil package.
+You might find yourself in a situation where you want to create copies of your files, such as for backup purposes. For this, you can use the shutil package.
 ```python
 import shutil # Here we import shutil
 
@@ -64,12 +69,11 @@ shutil.copytree(os.path.join(working_dir, "data", "files"), os.path.join(working
 ```
 
 ## Renaming files
-After copying the files, we can try to do some small operations on them!
+After copying the files, we can perform some small operations on them!
 
-Have you ever been in a situation where you noticed that you did not follow a clear concept in your file naming or that you ordered the sequences within the file names wrong ?
-Let's fix that!
+Have you ever found yourself in a situation where you realized you didn't follow a clear concept in your file naming or ordered the sequences within the file names incorrectly? Let's fix that!
 
-Let us start simple, add an "exp" in front of the current file name
+Let's start simple: add "exp" in front of the current file name.
 ```python
 import os 
 
@@ -134,14 +138,13 @@ for file in os.listdir(folder_path):
     os.rename(os.path.join(folder_path, file), os.path.join(folder_path, new_name))
 ```
 
-Of course, regular expressions are not limited to spaces, you can adapt them to match your file names. Best to use is https: /
-/ regexr.com for this.
+Regular expressions are not limited to spaces, you can adapt them to match your file names. Best to use is **[regexr](https://regexr.com)** for this. They also provide a handy cheatsheet.
 
 ## Moving files based on criteria - Sort your files
 Another task that you may be interested in is sorting files. To sort files, we can use shutil again. We can sort files according to various criteria. For now, I show you file types and file names.
 
 ### Sort all your files based on file type
-To sort files by file type, we want to use the .endswith() function that we already used previously. 
+To sort files by file type, we can use the .endswith() function that we already used previously. 
 ```python
 import os
 import shutil
@@ -192,7 +195,7 @@ for file in os.listdir(folder_path):
 ```
 
 # Documentation
-What we also want for a research project, may be a list of all files and their modification dates. We can also use Python for that!
+For a research project, you might also want a list of all files along with their modification dates. We can use Python for that!
 
 ## Generate a README with all file names and their last modification date
 ```python
@@ -219,5 +222,4 @@ I hope that this already helps you a bit for your research projects!
 
 Any other task that you want to optimize/automate?
 
-
-[Here](https://automatetheboringstuff.com) is a nice resource with even more topics!
+**[Here](https://automatetheboringstuff.com)** is a nice resource with even more topics!

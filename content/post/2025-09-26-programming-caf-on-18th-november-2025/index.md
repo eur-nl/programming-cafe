@@ -1,12 +1,12 @@
 ---
-title: Programming Café on 18th November 2025
-author: Package Build
-slug: programming-caf-on-18th-november-2025
-categories: [archive]
+title: "Programming Café on 18th November 2025"
+author: "Package Build"
+slug: "programming-caf-on-18th-november-2025"
+categories: archive
 tags: []
 banner: /images/logo_1.jpg
-summary: "Our first Programming Café has been scheduled!"
-weight: 1
+summary: Our first Programming Café has been scheduled!
+weight: 100
 ---
 
 <img src= "/programming-cafe/images/logo_1.jpg" style = "width:20%;height:20%">
