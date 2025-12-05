@@ -91,20 +91,20 @@ params:
   footer:
     recent_posts:
       enable: yes
-  formspree_action: https://formspree.io/sample/of/endpoint
-  googleMapsApiKey: AIzaSyAv7Sza8NSp9_l_g8G2vlo0H4ydEPn_2jY
-  googleRecaptchaKey: site_key_for_google_recaptcha
+  #formspree_action: https://formspree.io/sample/of/endpoint
+  #googleMapsApiKey: AIzaSyAv7Sza8NSp9_l_g8G2vlo0H4ydEPn_2jY
+  #googleRecaptchaKey: site_key_for_google_recaptcha
   #latitude: '-12.043333'
   logo: images/icon.jpg
   logo_small: images/icon.jpg
-  logo_text: OSCR
+  logo_text: Programming Cafe
   #longitude: '-77.028333'
   mainSections: post
   recent_posts:
     enable: yes
     hide_summary: no
-    subtitle: See here the latest news about our events!
-    title: Recent updates
+    subtitle: See here which Cafés are scheduled next!
+    title: Upcoming Cafés
   see_more:
     enable: no
     icon: fa-brands fa-readme

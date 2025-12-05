@@ -29,6 +29,9 @@ The second part of the Café is designed to help you with your projects! Any que
 - **12:00-12:15** Break & Begin Lunch
 - **12:15-13:00** Time to eat, collaborate, ask question and try out your new skills
 
+### Registration
+Please register [here](https://eur-nl.libcal.com/event/4461821)!
+
 ### Preparation
 Bring your own laptop!
 
@@ -37,4 +40,6 @@ We will offer some snacks!
 
 ### Prior meeting keeps you from joining at 11:00?
 No problem! Join us after your meeting and we will bring you up-to-date. We will also upload the material after the session.
+
+
 </p>
