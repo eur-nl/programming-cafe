@@ -1,7 +1,6 @@
 ---
 title: Programming Café on 14th of April 2026
 author: Package Build
-date: '2025-11-21'
 slug: programming-caf-on-14th-of-april-2026
 categories: [news]
 tags: []

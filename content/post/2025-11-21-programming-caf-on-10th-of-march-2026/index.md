@@ -1,7 +1,6 @@
 ---
 title: Programming Café on 10th of March 2026
 author: Package Build
-date: '2025-11-21'
 slug: programming-caf-on-10th-of-march-2026
 categories: [news]
 tags: []
