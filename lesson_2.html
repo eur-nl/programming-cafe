@@ -44,7 +44,7 @@
 
 
 
-<link href="./css/custom.css?1764840377" rel="stylesheet">
+<link href="./css/custom.css?1764850660" rel="stylesheet">
 
 
 
@@ -293,27 +293,30 @@ I hope that I can show you some tricks for these tasks today.</p>
 I would recommend the use of PyCharm!</p>
 <ul>
 <li>Please create a copy of the files that you want to work on.</li>
-<li>You can also download test files extracted from the <a href="https://clarin.eurac.edu/repository/xmlui/handle/20.500.12124/81">German Summary Corpus</a> <a href="extras/data.zip">here</a></li>
+<li>You can also download test files extracted from the <a href="https://clarin.eurac.edu/repository/xmlui/handle/20.500.12124/81">German Summary Corpus</a> (Wedig &amp; Strobl, 2024) <strong><a href="extras/data.zip">here</a></strong>.</li>
+<li>Create a folder &ldquo;data&rdquo; in your projects and a subfolder &ldquo;files&rdquo; in which you paste your files</li>
 </ul>
 <h1 id="file-management">File Management</h1>
-<h2 id="generate-a-file-structur-automatically">Generate a file structur automatically</h2>
+<p>During a busy period like a PhD, tasks such as tracking existing files or creating backups may be overlooked. Python can help automate these tasks, allowing you to complete them with the press of a button.</p>
+<h2 id="generate-a-file-structure-automatically">Generate a file structure automatically</h2>
+<p>At the beginning of your project (or at a later stage), you might wonder how to best structure your files. This code snippet allows you to automate the process. <strong>Be aware: data/copy will be created for this session today and is not typical in a research project</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os <span style="color:#75715e">#package that gives us access to the operating system</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>folders <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;data/raw&#34;</span>, <span style="color:#e6db74">&#34;data/processed&#34;</span>, <span style="color:#e6db74">&#34;data/copy&#34;</span> <span style="color:#e6db74">&#34;scripts&#34;</span>, <span style="color:#e6db74">&#34;results&#34;</span>]
+</span></span><span style="display:flex;"><span>folders <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;data/raw&#34;</span>, <span style="color:#e6db74">&#34;data/processed&#34;</span>, <span style="color:#e6db74">&#34;data/copy&#34;</span> <span style="color:#e6db74">&#34;scripts&#34;</span>, <span style="color:#e6db74">&#34;results&#34;</span>] <span style="color:#75715e"># Here you can define how you would like to name your folders</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create folders</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> folder <span style="color:#f92672">in</span> folders:
 </span></span><span style="display:flex;"><span>    os<span style="color:#f92672">.</span>makedirs(folder, exist_ok<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
 </span></span></code></pre></div><h2 id="get-an-overview-of-all-files-in-one-folder">Get an overview of all files in one folder</h2>
-<p>To get an overview of all files that exist in one folder, you can use the listdir() function.</p>
+<p>To get an overview of all the files in a folder, you can use the listdir() function.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Get the directory path</span>
 </span></span><span style="display:flex;"><span>working_dir <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>getcwd()
 </span></span><span style="display:flex;"><span>path <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(working_dir, <span style="color:#e6db74">&#34;data&#34;</span>, <span style="color:#e6db74">&#34;files&#34;</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>print(os<span style="color:#f92672">.</span>listdir(path))
-</span></span></code></pre></div><p>Here print allows us to see the results on the console.</p>
-<h2 id="copying-files-eg-to-create-a-backup">Copying files e.g. to create a backup</h2>
-<p>You may also be in a situation where you would like to create copies of your files, for example, as backup. For that, we can use the shutil package.</p>
+</span></span><span style="display:flex;"><span>print(os<span style="color:#f92672">.</span>listdir(path)) <span style="color:#75715e"># print allows us to see the results on the console.</span>
+</span></span></code></pre></div><h2 id="copying-files-eg-to-create-a-backup">Copying files: e.g., to create a backup</h2>
+<p>You might find yourself in a situation where you want to create copies of your files, such as for backup purposes. For this, you can use the shutil package.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> shutil <span style="color:#75715e"># Here we import shutil</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Get the directory path</span>
@@ -328,10 +331,9 @@ I would recommend the use of PyCharm!</p>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># we can also copy a while directory</span>
 </span></span><span style="display:flex;"><span>shutil<span style="color:#f92672">.</span>copytree(os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(working_dir, <span style="color:#e6db74">&#34;data&#34;</span>, <span style="color:#e6db74">&#34;files&#34;</span>), os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(working_dir, <span style="color:#e6db74">&#34;data&#34;</span>, <span style="color:#e6db74">&#34;copy&#34;</span>), dirs_exist_ok <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>)
 </span></span></code></pre></div><h2 id="renaming-files">Renaming files</h2>
-<p>After copying the files, we can try to do some small operations on them!</p>
-<p>Have you ever been in a situation where you noticed that you did not follow a clear concept in your file naming or that you ordered the sequences within the file names wrong ?
-Let&rsquo;s fix that!</p>
-<p>Let us start simple, add an &ldquo;exp&rdquo; in front of the current file name</p>
+<p>After copying the files, we can perform some small operations on them!</p>
+<p>Have you ever found yourself in a situation where you realized you didn&rsquo;t follow a clear concept in your file naming or ordered the sequences within the file names incorrectly? Let&rsquo;s fix that!</p>
+<p>Let&rsquo;s start simple: add &ldquo;exp&rdquo; in front of the current file name.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os 
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Get the directory path</span>
@@ -383,12 +385,11 @@ Let&rsquo;s fix that!</p>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> file <span style="color:#f92672">in</span> os<span style="color:#f92672">.</span>listdir(folder_path):
 </span></span><span style="display:flex;"><span>    new_name <span style="color:#f92672">=</span> pattern<span style="color:#f92672">.</span>sub(replace_with, file)
 </span></span><span style="display:flex;"><span>    os<span style="color:#f92672">.</span>rename(os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(folder_path, file), os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(folder_path, new_name))
-</span></span></code></pre></div><p>Of course, regular expressions are not limited to spaces, you can adapt them to match your file names. Best to use is https: /
-/ regexr.com for this.</p>
+</span></span></code></pre></div><p>Regular expressions are not limited to spaces, you can adapt them to match your file names. Best to use is <strong><a href="https://regexr.com">regexr</a></strong> for this. They also provide a handy cheatsheet.</p>
 <h2 id="moving-files-based-on-criteria---sort-your-files">Moving files based on criteria - Sort your files</h2>
 <p>Another task that you may be interested in is sorting files. To sort files, we can use shutil again. We can sort files according to various criteria. For now, I show you file types and file names.</p>
 <h3 id="sort-all-your-files-based-on-file-type">Sort all your files based on file type</h3>
-<p>To sort files by file type, we want to use the .endswith() function that we already used previously.</p>
+<p>To sort files by file type, we can use the .endswith() function that we already used previously.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> shutil
 </span></span><span style="display:flex;"><span>
@@ -432,7 +433,7 @@ Let&rsquo;s fix that!</p>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">elif</span> <span style="color:#e6db74">&#34;L2&#34;</span> <span style="color:#f92672">in</span> file:
 </span></span><span style="display:flex;"><span>        shutil<span style="color:#f92672">.</span>move(os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(folder_path, file), os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(destination_L2, file))
 </span></span></code></pre></div><h1 id="documentation">Documentation</h1>
-<p>What we also want for a research project, may be a list of all files and their modification dates. We can also use Python for that!</p>
+<p>For a research project, you might also want a list of all files along with their modification dates. We can use Python for that!</p>
 <h2 id="generate-a-readme-with-all-file-names-and-their-last-modification-date">Generate a README with all file names and their last modification date</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> time
@@ -453,7 +454,7 @@ Let&rsquo;s fix that!</p>
 </span></span><span style="display:flex;"><span>            print(os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>basename(folder_path), os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>basename(dirpath), file, mod_time, sep <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">&#34;</span>, file <span style="color:#f92672">=</span> file_out)
 </span></span></code></pre></div><p>I hope that this already helps you a bit for your research projects!</p>
 <p>Any other task that you want to optimize/automate?</p>
-<p><a href="https://automatetheboringstuff.com">Here</a> is a nice resource with even more topics!</p>
+<p><strong><a href="https://automatetheboringstuff.com">Here</a></strong> is a nice resource with even more topics!</p>
 
                         </div>
 
@@ -493,19 +494,6 @@ Let&rsquo;s fix that!</p>
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
-                        <a href="./post/programming-caf-on-18th-november-2025.html">
-                          
-                            <img src="./images/logo_1.jpg" class="img-responsive" alt="Programming Café on 18th November 2025" />
-                          
-                        </a>
-                    </div>
-                    <div class="name same-height-always">
-                        <h5><a href="./post/programming-caf-on-18th-november-2025.html">Programming Café on 18th November 2025</a></h5>
-                    </div>
-                </div>
-                
-                <div class="item same-height-row clearfix">
-                    <div class="image same-height-always">
                         <a href="./post/programming-caf-on-9th-of-december-2025.html">
                           
                             <img src="./images/Logo_2.jpg" class="img-responsive" alt="Programming Café on 9th of December 2025" />
@@ -527,6 +515,19 @@ Let&rsquo;s fix that!</p>
                     </div>
                     <div class="name same-height-always">
                         <h5><a href="./post/programming-caf-on-13th-of-january-2026.html">Programming Café on 13th of January 2026</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="./post/programming-caf-on-10th-february-2026.html">
+                          
+                            <img src="./images/logo_no4.jpg" class="img-responsive" alt="Programming Café on 10th February 2026" />
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="./post/programming-caf-on-10th-february-2026.html">Programming Café on 10th February 2026</a></h5>
                     </div>
                 </div>
                 
