@@ -2,11 +2,11 @@
 title: Programming Café on 9th of December 2025
 author: Package Build
 slug: programming-caf-on-9th-of-december-2025
-categories: [news]
+categories: [archive]
 tags: []
 banner: /images/Logo_2.jpg
 summary: "Our second Programming Café has been scheduled!"
-weight: 2
+weight: 100
 ---
 
 
