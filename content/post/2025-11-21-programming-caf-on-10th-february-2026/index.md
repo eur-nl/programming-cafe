@@ -20,8 +20,13 @@ We will host our fourth Programming Café on 10th of Feburary at 11:00 (until 13
 
 #### Topic: Clean your data using Python
 Is your research data messy? Do you want to clean your data efficiently and learn how to log the changes using Python?
+
 In this fourth session of the Programming Café, you will learn how to identify and correct errors in your raw data. We will demonstrate how to examine your data, identify and correct unwanted characters or spelling errors, merge columns, and rename columns using the pandas package. Additionally, we will explore how to write code that logs changes in your data.
+
 The second part of the session is hands-on. Are you stuck on a problem? Not sure how to apply what you’ve learned? Need some fresh ideas? Bring your code, your bugs, or your ideas — and get practical help from EUR’s Research Software trainers. 
+
+##### Interested in Open Refine?
+Are you interested in learning more about OpenRefine, the tool that we previously wanted to look at? Pay attention to your mailboxes! A training called "Data Carpentries for Social Sciences" will be happening in March which includes extenstive training on OpenRefine. Information will soon follow!
 
 ## Programme
 - **10:50-11:00** Walk-in

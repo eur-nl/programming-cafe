@@ -6,7 +6,7 @@ categories: [archive]
 tags: []
 banner: /images/Logo_3.jpg
 summary: "Our third Programming Café has been scheduled!"
-weight: 100
+weight: 102
 ---
 
 
