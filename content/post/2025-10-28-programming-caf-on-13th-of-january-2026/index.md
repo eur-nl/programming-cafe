@@ -23,7 +23,7 @@ We will host our third Programming Café on 13th of January at 11:00 (until 13:0
 The topic of the third session will be "Using the Command Line - All the cool kids are doing it". In this Programming Café session, our research software engineer Allan van Hulst will explore the fundamentals of using the command line with you. You’ll get familiar with the basics of the bash shell, understand I/O and how to use the output from one command as an input to the other as well as essentials of sed and grep.
 The second part of the Café is designed to help you with your projects! Any questions in regard to how to use the learned knowledge for your own code? Struggling with a bug? Need some brainstorming with colleagues? We got your back!
 
-Find the slides [**here**](slide_bash_training.pdf).
+Find the slides [**here**](programming-caf-on-13th-of-january-2026.html/slide_bash_training.pdf).
 
 ## Programme
 - **10:50-11:00** Walk-in
