@@ -2,11 +2,11 @@
 title: Programming Café on 13th of January 2026
 author: Package Build
 slug: programming-caf-on-13th-of-january-2026
-categories: [news]
+categories: [archive]
 tags: []
 banner: /images/Logo_3.jpg
 summary: "Our third Programming Café has been scheduled!"
-weight: 3
+weight: 100
 ---
 
 
