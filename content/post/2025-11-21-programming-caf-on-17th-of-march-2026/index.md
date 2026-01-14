@@ -1,7 +1,7 @@
 ---
-title: Programming Café on 10th of March 2026
+title: Programming Café on 17th of March 2026
 author: Package Build
-slug: programming-caf-on-10th-of-march-2026
+slug: programming-caf-on-17th-of-march-2026
 categories: [news]
 tags: []
 banner: /images/logo_no5.jpg
@@ -16,7 +16,7 @@ weight: 5
 
 ### Join us for more programming!
 
-We will host our next Programming Café on 10th of March at 11:00 (until 13:00).
+We will host our next Programming Café on 17th of March at 11:00 (until 12:45).
 <br>
 
 #### Topic
