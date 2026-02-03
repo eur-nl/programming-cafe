@@ -30,7 +30,7 @@ Are you interested in learning more about OpenRefine, the tool that we previousl
 
 ## Programme
 - **10:50-11:00** Walk-in
-- **11:00-12:00** Live Coding or Presentation
+- **11:00-12:00** Live Coding: **Find the script [here](../lesson_4.html)**
 - **12:00-12:15** Break & Begin Lunch
 - **12:15-13:00** Time to eat, collaborate, ask question and try out your new skills
 

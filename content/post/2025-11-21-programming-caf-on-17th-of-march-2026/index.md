@@ -27,7 +27,7 @@ The second part of the Café is designed to help you with your projects! Any que
 - **10:50-11:00** Walk-in
 - **11:00-12:00** Live Coding or Presentation
 - **12:00-12:15** Break & Begin Lunch
-- **12:15-13:00** Time to eat, collaborate, ask question and try out your new skills
+- **12:15-12:45** Time to eat, collaborate, ask question and try out your new skills
 
 ### Preparation
 Bring your own laptop!
