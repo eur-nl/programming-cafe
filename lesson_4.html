@@ -36,7 +36,7 @@
 
 
 
-<link href="./css/custom.css?1770134298" rel="stylesheet">
+<link href="./css/custom.css?1770735099" rel="stylesheet">
 
 
 
@@ -289,17 +289,13 @@
                           <h1 id="clean-your-data-efficiently-using-python">Clean your data efficiently using Python</h1>
 <p>Everyone has seen messy data before, extras spaces, symbols mixed with numbers, inconsistent spelling or data formats. All of these examples make the analysis of data more difficult.</p>
 <p>The data in itself is not &ldquo;bad&rdquo; data, but just not ready for analyses yet!</p>
-<p><br>
-In today&rsquo;s session, I want to help you show how you can check whether your data is &ldquo;messy&rdquo; and how to get it ready for your analysis.</p>
+<p>In today&rsquo;s session, I want to help you show how you can check whether your data is &ldquo;messy&rdquo; and how to get it ready for your analysis.</p>
 <p>You may now wonder &ldquo;Why should I clean my data? Can&rsquo;t I just analyse the messy data?&rdquo;. There are multiple answers to this, but in general, messy data (in general) can lead to wrong results, make your analysis slower, increases your chance of mistakes and a lot harder to reproduce. If “Amsterdam”, for example, appears in three different spellings in your data, your analysis might think you have three cities instead of one.</p>
-<p><br>
-Let&rsquo;s learn together, how to spot messy data, how to fix it and
+<p>Let&rsquo;s learn together, how to spot messy data, how to fix it and
 how to log the changes so everything is transparent and reproducible!</p>
-<p><br>
-Before we begin, I want to show you <a href="https://github.com/eyowhite/Messy-dataset">an example of messy data</a>! Let&rsquo;s have a look at the data, open the file and try to spot some irregularities together. I want you to think of issues such as <strong>unwanted characters</strong>, <strong>inconsistent spelling</strong>, <strong>mixed data types</strong>, <strong>extra whitespace</strong>, <strong>duplicate rows</strong> and <strong>missing values</strong>.</p>
+<p>Before we begin, I want to show you <a href="https://github.com/eyowhite/Messy-dataset">an example of messy data</a>! Let&rsquo;s have a look at the data, open the file and try to spot some irregularities together. I want you to think of issues such as <strong>unwanted characters</strong>, <strong>inconsistent spelling</strong>, <strong>mixed data types</strong>, <strong>extra whitespace</strong>, <strong>duplicate rows</strong> and <strong>missing values</strong>.</p>
 <p>You can download the data <strong><a href="extras/messy_HR_data.csv.zip">here</a></strong> and find the jupyter notebook <strong><a href="extras/DataCleaning.ipynb">here</a></strong></p>
-<p><br>
-While we did the first examination with our own eyes, we can also use pandas (the python package) to inspect the data.</p>
+<p>While we did the first examination with our own eyes, we can also use pandas (the python package) to inspect the data.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># First, let&#39;s import pandas (or install if you have not installed it yet)</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Let&#39;s read the csv file</span>
@@ -425,8 +421,8 @@ Data columns (total 10 columns):
 dtypes: str(10)
 memory usage: 78.3 KB
 </code></pre>
-<p><br>
-Do you see the first problem already? Some columns do not have 1000 rows, but 841 (Age), 610 (Email) and 815 (Phone number). Let&rsquo;s remember this and fix it later or see whether the NA values are all properly defined.</p>
+<p>I</p>
+<p>Do you see the first problem already? Some columns do not have 1000 rows, but 841 (Age), 610 (Email) and 815 (Phone number instead). Let&rsquo;s remember this and fix it later.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Let&#39;s have a look at the summary of the data</span>
 </span></span><span style="display:flex;"><span>df<span style="color:#f92672">.</span>describe(include<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;all&#34;</span>)
 </span></span></code></pre></div><div>
@@ -515,8 +511,7 @@ Do you see the first problem already? Some columns do not have 1000 rows, but 84
   </tbody>
 </table>
 </div>
-<p><br>
-This overview gives us another hint. Now, of course our file only is an example, but you may wonder (in real data) why a phone number is used 236 times.</p>
+<p>This overview gives us another hint. Now, of course our file only is an example, but you may wonder (in real data) why a phone number is used 236 times.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Let&#39;s have a look at the unique values of each column and check whether we find something there</span>
 </span></span><span style="display:flex;"><span>df<span style="color:#f92672">.</span>Name<span style="color:#f92672">.</span>unique()
 </span></span></code></pre></div><pre><code>&lt;StringArray&gt;
@@ -524,8 +519,7 @@ This overview gives us another hint. Now, of course our file only is an example,
    ' frank ',     ' bob ',   ' alice ',     ' ivy ']
 Length: 10, dtype: str
 </code></pre>
-<p><br>
-The names look normal to me, but if we look closer, we can see that there are whitespaces around the names. Is that needed? I do not think so! Let&rsquo;s delete them.</p>
+<p>The names look normal to me, but if we look closer, we can see that there are whitespaces around the names. Is that needed? I do not think so! Let&rsquo;s delete them.</p>
 <h1 id="wait-logging">WAIT! Logging?</h1>
 <p>We just wanted to start deleting, however, we want to keep track of everthing. For that I want to write a small function that we can reuse.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> datetime
@@ -535,8 +529,7 @@ The names look normal to me, but if we look closer, we can see that there are wh
 </span></span><span style="display:flex;"><span>        print(description, datetime<span style="color:#f92672">.</span>datetime<span style="color:#f92672">.</span>now(), sep <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">&#39;</span>, file <span style="color:#f92672">=</span> log_file)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>log_change(<span style="color:#e6db74">&#34;Started process!&#34;</span>)
-</span></span></code></pre></div><p><br>
-Back to deleting whitespace!</p>
+</span></span></code></pre></div><p>Back to deleting whitespace!</p>
 <h2 id="deleting-whitespace">Deleting Whitespace</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># We can do that using strip()</span>
 </span></span><span style="display:flex;"><span>df<span style="color:#f92672">.</span>Name <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>Name<span style="color:#f92672">.</span>str<span style="color:#f92672">.</span>strip()
@@ -547,24 +540,21 @@ Back to deleting whitespace!</p>
      'bob',   'alice',     'ivy']
 Length: 10, dtype: str
 </code></pre>
-<p><br>
-<code>df.Name.str.strip()</code> removes extra whitespace from the beginning and end of each string. We use <code>str</code> to say that this method should be used to every value in the column.</p>
-<p><br>
-Since we looked at names, we may also want to have then capitalized, right?</p>
+<p>df.Name.str.strip() removes extra whitespace from the beginning and end of each string. We use <code>str</code> to say that this method should be used to every value in the column.</p>
+<p>Since we looked at names, we may also want to have then capitalized, right?</p>
 <h2 id="manipulate-cases">Manipulate cases</h2>
-<p>We can do that using <code>str.capitalize()</code>.
+<p>We can do that using str.capitalize().
 In a similar manner, we can use lowercase, uppercase or different settings:</p>
 <ul>
-<li><code>str.lower()</code>: Converts all characters to lowercase.</li>
-<li><code>str.upper()</code>: Converts all characters to uppercase.</li>
-<li><code>str.title()</code>: Converts first character of each word to uppercase and remaining to lowercase.</li>
-<li><code>str.capitalize()</code>: Converts first character to uppercase and remaining to lowercase.</li>
-<li><code>str.swapcase()</code>: Converts uppercase to lowercase and lowercase to uppercase.</li>
+<li>str.lower(): Converts all characters to lowercase.</li>
+<li>str.upper(): Converts all characters to uppercase.</li>
+<li>str.title(): Converts first character of each word to uppercase and remaining to lowercase.</li>
+<li>str.capitalize(): Converts first character to uppercase and remaining to lowercase.</li>
+<li>str.swapcase(): Converts uppercase to lowercase and lowercase to uppercase.</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df<span style="color:#f92672">.</span>Name <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>Name<span style="color:#f92672">.</span>str<span style="color:#f92672">.</span>capitalize()
 </span></span><span style="display:flex;"><span>log_change(<span style="color:#e6db74">&#34;Capitalized strings in column Name&#34;</span>)
-</span></span></code></pre></div><p><br>
-Let&rsquo;s have a look at the age next&hellip;</p>
+</span></span></code></pre></div><p>Let&rsquo;s have a look at the age next&hellip;</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df<span style="color:#f92672">.</span>Age<span style="color:#f92672">.</span>unique()
 </span></span></code></pre></div><pre><code>&lt;StringArray&gt;
 ['25', nan, '35', '40', 'thirty', '50']
@@ -587,8 +577,7 @@ Length: 6, dtype: str
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df<span style="color:#f92672">.</span>Age<span style="color:#f92672">.</span>unique()
 </span></span></code></pre></div><pre><code>array([25., nan, 35., 40., 30., 50.])
 </code></pre>
-<p><br>
-Let&rsquo;s check whether we find a similar problem in the Salary.</p>
+<p>Let&rsquo;s check whether we find a similar problem in the Salary.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df<span style="color:#f92672">.</span>Salary<span style="color:#f92672">.</span>unique()
 </span></span></code></pre></div><pre><code>&lt;StringArray&gt;
 ['50000', '65000', 'SIXTY THOUSAND', ' NAN ', '70000', '55000']
@@ -605,15 +594,13 @@ Length: 6, dtype: str
 </span></span><span style="display:flex;"><span>df<span style="color:#f92672">.</span>Salary<span style="color:#f92672">.</span>unique()
 </span></span></code></pre></div><pre><code>array([50000., 65000., 60000.,    nan, 70000., 55000.])
 </code></pre>
-<p><br>
-Let&rsquo;s have a short look at Gender&hellip;</p>
+<p>Let&rsquo;s have a short look at Gender&hellip;</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df<span style="color:#f92672">.</span>Gender<span style="color:#f92672">.</span>unique()
 </span></span></code></pre></div><pre><code>&lt;StringArray&gt;
 ['Male', 'Female', 'Other']
 Length: 3, dtype: str
 </code></pre>
-<p><br>
-Ok! Looks good to me! But we may want to change it to &ldquo;m&rdquo;, &ldquo;f&rdquo; and &ldquo;d&rdquo;?
+<p>Ok! Looks good to me! But we may want to change it to &ldquo;m&rdquo;, &ldquo;f&rdquo; and &ldquo;d&rdquo;?
 For that, we could create a so-called mapping. We create a dictionary that contains the words that are currently in the dataset as keys and the words that we want to use as values. With this, we can also standardize the spelling!</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>gender_mapping <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;Male&#39;</span>: <span style="color:#e6db74">&#39;m&#39;</span>, <span style="color:#e6db74">&#39;Female&#39;</span>: <span style="color:#e6db74">&#39;f&#39;</span>, <span style="color:#e6db74">&#39;Other&#39;</span>:<span style="color:#e6db74">&#39;d&#39;</span>}
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Important: To use this function, you need the newest version of pandas (3.0) which may require to update your Python instance</span>
@@ -633,15 +620,13 @@ For that, we could create a so-called mapping. We create a dictionary that conta
 999    m
 Name: Gender, Length: 1000, dtype: str
 </code></pre>
-<p><br>
-I did not find any problems in the Department and Position column, however, I do not like that the columns &ldquo;Joining Date&rdquo;, &ldquo;Performance Score&rdquo; and &ldquo;Phone Number&rdquo; use two words! That may make the work with them more difficult as we have to use a different approach (<code>df['Joining Date']</code> instead of <code>df.joining_date</code>).</p>
+<p>I did not find any problems in the Department and Position column, however, I do not like that the columns &ldquo;Joining Date&rdquo;, &ldquo;Performance Score&rdquo; and &ldquo;Phone Number&rdquo; use two words! That may make the work with them more difficult as we have to use a different approach (<code>df['Joining Date']</code> instead of <code>df.joining_date</code>).</p>
 <h2 id="renaming-columns">Renaming columns</h2>
 <p>Let&rsquo;s rename them!</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>rename(columns<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#34;Joining Date&#34;</span>: <span style="color:#e6db74">&#34;Joining_Date&#34;</span>, <span style="color:#e6db74">&#34;Performance Score&#34;</span>: <span style="color:#e6db74">&#34;Performance_Score&#34;</span>, <span style="color:#e6db74">&#34;Phone Number&#34;</span>: <span style="color:#e6db74">&#34;Phone_Number&#34;</span>})
 </span></span><span style="display:flex;"><span>log_change(<span style="color:#e6db74">&#34;Renaming Column Joining Date, Performance Score and Phone Number to Joining_Date, Performance_Score and Phone_Number&#34;</span>)
-</span></span></code></pre></div><p><br>
-While having a first look at our data, we have seen that Age, Salary, Email and Phone Number, were not fully filled and contained empty cells. We also saw that &ldquo;NaN&rdquo; has not been used for non-existing values all the time. Let&rsquo;s unify that!</p>
-<h2 id="missing-values-and-using-na">Missing values and using na</h2>
+</span></span></code></pre></div><h1 id="missing-values-and-using-na">Missing values and using na</h1>
+<p>While having a first look at our data, we have seen that Age, Salary, Email and Phone Number, were not fully filled and contained empty cells. We also saw that &ldquo;NaN&rdquo; has not been used for non-existing values all the time. Let&rsquo;s unify that!</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># First we want to replace empty cells with a NA value</span>
 </span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#34;&#34;</span>, pandas<span style="color:#f92672">.</span>NA)
 </span></span><span style="display:flex;"><span>log_change(<span style="color:#e6db74">&#34;Filling all empty cells with NA&#34;</span>)
@@ -827,7 +812,7 @@ While having a first look at our data, we have seen that Age, Salary, Email and 
 </table>
 <p>1000 rows × 10 columns</p>
 </div>
-<h2 id="unifying-time-stamps">Unifying time stamps</h2>
+<h1 id="unifying-time-stamps">Unifying time stamps</h1>
 <p>You may have guessed it already, but the last aspect that we want to clean are the different time stamps. The dataset contains formats such as month, day year and year/month/day as well as month/day/year.</p>
 <p>Let&rsquo;s unify that using pandas. A possible approach would be <code>df.Joining_Date = pandas.to_datetime(df.Joining_Date, errors=&quot;coerce&quot;)</code>. However, since our data is a bit more complex, we may have to adapt to different formats.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">parse_date</span>(date):
@@ -1025,8 +1010,8 @@ While having a first look at our data, we have seen that Age, Salary, Email and 
 </table>
 <p>1000 rows × 10 columns</p>
 </div>
-<h2 id="we-are-done-for-today-now-the-data-is-ready-for-the-analysis">We are done for today! Now, the data is ready for the analysis!</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df<span style="color:#f92672">.</span>describe(include<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;all&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Now we can start doing some statistics!</span>
+</span></span><span style="display:flex;"><span>df<span style="color:#f92672">.</span>describe(include<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;all&#34;</span>)
 </span></span></code></pre></div><div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1204,7 +1189,9 @@ While having a first look at our data, we have seen that Age, Salary, Email and 
   </tbody>
 </table>
 </div>
-
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># And we can save the results in a file</span>
+</span></span><span style="display:flex;"><span>df<span style="color:#f92672">.</span>to_csv(<span style="color:#e6db74">&#34;new_file.csv&#34;</span>, index <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>, na_rep <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;NaN&#34;</span>)
+</span></span></code></pre></div>
                         </div>
                         
                         
@@ -1260,19 +1247,6 @@ While having a first look at our data, we have seen that Age, Salary, Email and 
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
-                        <a href="./post/programming-caf-on-10th-february-2026.html">
-                          
-                            <img src="./images/logo_no4.jpg" class="img-responsive" alt="Programming Café on 10th February 2026" />
-                          
-                        </a>
-                    </div>
-                    <div class="name same-height-always">
-                        <h5><a href="./post/programming-caf-on-10th-february-2026.html">Programming Café on 10th February 2026</a></h5>
-                    </div>
-                </div>
-                
-                <div class="item same-height-row clearfix">
-                    <div class="image same-height-always">
                         <a href="./post/programming-caf-on-17th-of-march-2026.html">
                           
                             <img src="./images/logo_no5.jpg" class="img-responsive" alt="Programming Café on 17th of March 2026" />
@@ -1294,6 +1268,19 @@ While having a first look at our data, we have seen that Age, Salary, Email and 
                     </div>
                     <div class="name same-height-always">
                         <h5><a href="./post/programming-caf-on-14th-of-april-2026.html">Programming Café on 14th of April 2026</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="./post/programming-caf-on-12th-of-may-2026.html">
+                          
+                            <img src="./images/logo_no7.jpg" class="img-responsive" alt="Programming Café on 12th of May 2026" />
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="./post/programming-caf-on-12th-of-may-2026.html">Programming Café on 12th of May 2026</a></h5>
                     </div>
                 </div>
                 
