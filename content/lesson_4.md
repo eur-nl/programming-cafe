@@ -1,24 +1,21 @@
 # Clean your data efficiently using Python
 
+
 Everyone has seen messy data before, extras spaces, symbols mixed with numbers, inconsistent spelling or data formats. All of these examples make the analysis of data more difficult.
 
 The data in itself is not "bad" data, but just not ready for analyses yet!
 
-\
 In today's session, I want to help you show how you can check whether your data is "messy" and how to get it ready for your analysis.
 
 You may now wonder "Why should I clean my data? Can't I just analyse the messy data?". There are multiple answers to this, but in general, messy data (in general) can lead to wrong results, make your analysis slower, increases your chance of mistakes and a lot harder to reproduce. If “Amsterdam”, for example, appears in three different spellings in your data, your analysis might think you have three cities instead of one.
 
-\
 Let's learn together, how to spot messy data, how to fix it and
 how to log the changes so everything is transparent and reproducible!
 
-\
-Before we begin, I want to show you [an example of messy data](https://github.com/eyowhite/Messy-dataset)! Let's have a look at the data, open the file and try to spot some irregularities together. I want you to think of issues such as **unwanted characters**, **inconsistent spelling**, **mixed data types**, **extra whitespace**, **duplicate rows** and **missing values**. 
+Before we begin, I want to show you [an example of messy data](https://github.com/eyowhite/Messy-dataset)! Let's have a look at the data, open the file and try to spot some irregularities together. I want you to think of issues such as **unwanted characters**, **inconsistent spelling**, **mixed data types**, **extra whitespace**, **duplicate rows** and **missing values**.
 
 You can download the data **[here](extras/messy_HR_data.csv.zip)** and find the jupyter notebook **[here](extras/DataCleaning.ipynb)**
 
-\
 While we did the first examination with our own eyes, we can also use pandas (the python package) to inspect the data.
 
 
@@ -38,6 +35,8 @@ df = pandas.read_csv("messy_HR_data.csv")
 # Look at the first five rows
 df.head()
 ```
+
+
 
 
 <div>
@@ -167,8 +166,9 @@ df.info()
     memory usage: 78.3 KB
 
 
-\
-Do you see the first problem already? Some columns do not have 1000 rows, but 841 (Age), 610 (Email) and 815 (Phone number). Let's remember this and fix it later or see whether the NA values are all properly defined.
+I
+
+Do you see the first problem already? Some columns do not have 1000 rows, but 841 (Age), 610 (Email) and 815 (Phone number instead). Let's remember this and fix it later.
 
 
 ```python
@@ -267,7 +267,7 @@ df.describe(include="all")
 </div>
 
 
-\
+
 This overview gives us another hint. Now, of course our file only is an example, but you may wonder (in real data) why a phone number is used 236 times.
 
 
@@ -275,15 +275,18 @@ This overview gives us another hint. Now, of course our file only is an example,
 # Let's have a look at the unique values of each column and check whether we find something there
 df.Name.unique()
 ```
+
+
+
+
     <StringArray>
     [  ' grace ',   ' david ',  ' hannah ',     ' eve ',    ' jack ', ' charlie ',
        ' frank ',     ' bob ',   ' alice ',     ' ivy ']
     Length: 10, dtype: str
 
 
-\
-The names look normal to me, but if we look closer, we can see that there are whitespaces around the names. Is that needed? I do not think so! Let's delete them.
 
+The names look normal to me, but if we look closer, we can see that there are whitespaces around the names. Is that needed? I do not think so! Let's delete them.
 
 # WAIT! Logging?
 
@@ -300,7 +303,7 @@ def log_change(description):
 
 log_change("Started process!")
 ```
-\
+
 Back to deleting whitespace!
 
 ## Deleting Whitespace
@@ -326,21 +329,20 @@ df.Name.unique()
     Length: 10, dtype: str
 
 
-\
-`df.Name.str.strip()` removes extra whitespace from the beginning and end of each string. We use `str` to say that this method should be used to every value in the column.
 
-\
+df.Name.str.strip() removes extra whitespace from the beginning and end of each string. We use `str` to say that this method should be used to every value in the column.
+
 Since we looked at names, we may also want to have then capitalized, right?
 
 ## Manipulate cases
 
-We can do that using `str.capitalize()`.
+We can do that using str.capitalize().
 In a similar manner, we can use lowercase, uppercase or different settings:
-- `str.lower()`: Converts all characters to lowercase.
-- `str.upper()`: Converts all characters to uppercase.
-- `str.title()`: Converts first character of each word to uppercase and remaining to lowercase.
-- `str.capitalize()`: Converts first character to uppercase and remaining to lowercase.
-- `str.swapcase()`: Converts uppercase to lowercase and lowercase to uppercase.
+- str.lower(): Converts all characters to lowercase.
+- str.upper(): Converts all characters to uppercase.
+- str.title(): Converts first character of each word to uppercase and remaining to lowercase.
+- str.capitalize(): Converts first character to uppercase and remaining to lowercase.
+- str.swapcase(): Converts uppercase to lowercase and lowercase to uppercase.
 
 
 ```python
@@ -348,7 +350,6 @@ df.Name = df.Name.str.capitalize()
 log_change("Capitalized strings in column Name")
 ```
 
-\
 Let's have a look at the age next...
 
 
@@ -411,7 +412,7 @@ df.Age.unique()
     array([25., nan, 35., 40., 30., 50.])
 
 
-\
+
 Let's check whether we find a similar problem in the Salary.
 
 
@@ -447,7 +448,7 @@ df.Salary.unique()
     array([50000., 65000., 60000.,    nan, 70000., 55000.])
 
 
-\
+
 Let's have a short look at Gender...
 
 
@@ -463,7 +464,7 @@ df.Gender.unique()
     Length: 3, dtype: str
 
 
-\
+
 Ok! Looks good to me! But we may want to change it to "m", "f" and "d"?
 For that, we could create a so-called mapping. We create a dictionary that contains the words that are currently in the dataset as keys and the words that we want to use as values. With this, we can also standardize the spelling!
 
@@ -498,7 +499,7 @@ df.Gender
     Name: Gender, Length: 1000, dtype: str
 
 
-\
+
 I did not find any problems in the Department and Position column, however, I do not like that the columns "Joining Date", "Performance Score" and "Phone Number" use two words! That may make the work with them more difficult as we have to use a different approach (`df['Joining Date']` instead of `df.joining_date`).
 
 ## Renaming columns
@@ -511,10 +512,11 @@ df = df.rename(columns={"Joining Date": "Joining_Date", "Performance Score": "Pe
 log_change("Renaming Column Joining Date, Performance Score and Phone Number to Joining_Date, Performance_Score and Phone_Number")
 
 ```
-\
+
+# Missing values and using na
+
 While having a first look at our data, we have seen that Age, Salary, Email and Phone Number, were not fully filled and contained empty cells. We also saw that "NaN" has not been used for non-existing values all the time. Let's unify that!
 
-## Missing values and using na
 
 ```python
 # First we want to replace empty cells with a NA value
@@ -719,7 +721,7 @@ df
 
 
 
-## Unifying time stamps
+# Unifying time stamps
 
 You may have guessed it already, but the last aspect that we want to clean are the different time stamps. The dataset contains formats such as month, day year and year/month/day as well as month/day/year.
 
@@ -939,11 +941,15 @@ df
 </div>
 
 
-## We are done for today! Now, the data is ready for the analysis!
+
 
 ```python
+# Now we can start doing some statistics!
 df.describe(include="all")
 ```
+
+
+
 
 <div>
 <style scoped>
@@ -1124,3 +1130,9 @@ df.describe(include="all")
 </div>
 
 
+
+
+```python
+# And we can save the results in a file
+df.to_csv("new_file.csv", index = False, na_rep = "NaN")
+```
