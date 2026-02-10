@@ -2,11 +2,11 @@
 title: Programming Café on 10th February 2026
 author: Package Build
 slug: programming-caf-on-10th-february-2026
-categories: [news]
+categories: [archive]
 tags: []
 banner: /images/logo_no4.jpg
 summary: "Another Programming Café has been scheduled!"
-weight: 4
+weight: 103
 ---
 
 <img src= "/programming-cafe/images/logo_no4.jpg" style = "width:20%;height:20%">
