@@ -281,13 +281,6 @@ def validate_filetype(project_path):
 validate_filetype(Path.home() / 'Documents' / 'TestProject')
 ```
 
-    .Rhistory is not in a preferred file format
-    .DS_Store is not in a preferred file format
-    .gitignore is not in a preferred file format
-    .DS_Store is not in a preferred file format
-    .DS_Store is not in a preferred file format
-
-
 ### Other useful tools and links
 - [Quarto](https://quarto.org): An open-source tools that helps you publish your code.
 - [OpenRefine](https://openrefine.org): An open-source tool that helps you clean your data without knowing how to program. Find an online tutorial [here](https://datacarpentry.github.io/openrefine-socialsci/index.html).
@@ -297,8 +290,3 @@ validate_filetype(Path.home() / 'Documents' / 'TestProject')
 - [How to FAIRify your Research Software](https://www.rug.nl/digital-competence-centre/research-data/content-fragments-data-management/guide-on-fair-software-ug-dcc-pdf-v1-0-2.pdf): Helpful tips to make your Research Software FAIR
 - [Assess your own software in terms of FAIR](https://fairsoftwarechecklist.net/v0.2/)
 - [Recommendations for FAIR software](https://fair-software.nl/)
-
-
-```python
-
-```
