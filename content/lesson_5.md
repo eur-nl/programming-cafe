@@ -96,6 +96,13 @@ with open(data_path / 'documentation.txt', mode = 'w', encoding = 'utf-8') as do
 
 ```
 
+Following, the documented version of the text would look like this:
+```text
+In this interview, we talk with User_1 [Replaced - Sean Curtis] about his wife User_4 [Replaced - Marion Aaker]. User_1 [Replaced - Sean Curtis] said that his wife has been wheezing since some weeks, while he mainly feels short of breath. Both born in the 60s [Replaced - 1965], Doctors may think it is related to their age and that were born in England [Replaced - Manchester].
+```
+
+### How to anonymize your data
+
 To truly anonymize the data instead, I recommend using an open-source tool such as [Textwash](https://github.com/ben-aaron188/textwash). Let’s take a quick look at how to use it:
 
 First, download the module from GitHub. Then, open the terminal, navigate to the directory containing the downloaded files, and enter the following commands
@@ -111,12 +118,12 @@ After preparing the folder, you can run the code below!
 python3 anon.py --language en --input_dir my_documents --output_dir anonymised_documents --cpu
 ```
 
-With this, this text here:
+With this, this text here
 ```text
 In this interview, we talk with Sean Curtis about his wife Marion Aaker. Sean Curtis said that his wife has been wheezing since some weeks, while he mainly feels short of breath. Both born in 1965, Doctors may think it is related to their age and that were born in Manchester.
 ```
 
-Changes to this:
+changes to this:
 ```text
 In this interview, we talk with PERSON_FIRSTNAME_1 PERSON_LASTNAME_1 about PRONOUN wife PERSON_FIRSTNAME_2 PERSON_LASTNAME_2. PERSON_FIRSTNAME_1 PERSON_LASTNAME_1 said that PRONOUN wife has been wheezing since some weeks, while PRONOUN mainly feels short of breath. Both born in DATE_1, Doctors DATE_1 think it is related to their age and that were born in LOCATION_1.
 ```
@@ -162,6 +169,7 @@ Although we’ve already created an empty README file, there are useful template
 What we might want to use Python for directly is inserting file paths into a README. For that, we can reuse content from another Programming Café session.
 
 The goal is to create the following overview:
+```markdown text
 TestProject/
 ├──.Rhistory
 ├──LICENSE.md
@@ -184,7 +192,7 @@ TestProject/
 		├──processed/
 		├──raw/
 	├──src/
-
+```
 
 
 ```python
@@ -215,7 +223,7 @@ You can also use Python to verify whether your file names match the pattern you�
 - https://regexr.com
 - https://regex101.com
 
-The example below matches it to the following file names `YYYYMMDD_ExperimentID_Task_Version`:
+The example below matches it to this pattern `YYYYMMDD_ExperimentID_Task_Version`.
 
 It fits the following file names:
 - 19951231_exp1543_interview_v1.csv
@@ -281,11 +289,16 @@ validate_filetype(Path.home() / 'Documents' / 'TestProject')
 
 
 ### Other useful tools and links
-- Quarto
-- [OpenRefine](https://openrefine.org)
+- [Quarto](https://quarto.org): An open-source tools that helps you publish your code.
+- [OpenRefine](https://openrefine.org): An open-source tool that helps you clean your data without knowing how to program. Find an online tutorial [here](https://datacarpentry.github.io/openrefine-socialsci/index.html).
 - [Software Management Plan](https://smp.research.software/interview?i=docassemble.SMPDecisionTree:data/questions/software.yml#page1): This decision tree tool helps you to fill in your own software management plan. While it is not mandatory for EUR researchers, I can only recommend filling it.
 - Use [GitHub](https://github.com) to collaborate with others on your code
-- [CodeMeta](https://codemeta.github.io)
-- [How to FAIRify your Research Software](https://www.rug.nl/digital-competence-centre/research-data/content-fragments-data-management/guide-on-fair-software-ug-dcc-pdf-v1-0-2.pdf)
+- [CodeMeta](https://codemeta.github.io): A metadata standarf for your software
+- [How to FAIRify your Research Software](https://www.rug.nl/digital-competence-centre/research-data/content-fragments-data-management/guide-on-fair-software-ug-dcc-pdf-v1-0-2.pdf): Helpful tips to make your Research Software FAIR
 - [Assess your own software in terms of FAIR](https://fairsoftwarechecklist.net/v0.2/)
 - [Recommendations for FAIR software](https://fair-software.nl/)
+
+
+```python
+
+```
