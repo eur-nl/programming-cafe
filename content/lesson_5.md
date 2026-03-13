@@ -15,13 +15,14 @@ In this fifth session of the Programming Café, we will have a look at the conte
 
 **Other useful tools and software**
 - Quarto
+- Software Management Plan
 
 Hopefully, you also see some known faces in the room: Some of the Data Stewards joined us today to answer your questions!
 
 ## Data sharing – De-identification of data
 In last Tuesday's session, you learned how to share your data responsibly. You explored the de-identification of qualitative data and learned how to prepare your publication package.
 
-Programming can assist you in de-identifying your data! Using research software, you can choose to either pseudonymize or anonymize it. Let’s take a closer look at how we can replace personal names, distort ages, and redact ZIP codes in the data:
+Programming can assist you in de-identifying your data! Using research software, you can choose to either pseudonymize or anonymize it. Let’s take a closer look at how we can replace personal names, distort ages, and redact ZIP codes in **[this data](extras/lesson_5.zip)**:
 
 
 ```python
@@ -95,7 +96,7 @@ with open(data_path / 'documentation.txt', mode = 'w', encoding = 'utf-8') as do
 
 ```
 
-To truly anonymize the data, I recommend using an open-source tool such as [Textwash](https://github.com/ben-aaron188/textwash). Let’s take a quick look at how to use it:
+To truly anonymize the data instead, I recommend using an open-source tool such as [Textwash](https://github.com/ben-aaron188/textwash). Let’s take a quick look at how to use it:
 
 First, download the module from GitHub. Then, open the terminal, navigate to the directory containing the downloaded files, and enter the following commands
 ```console
@@ -103,18 +104,28 @@ conda create -n textwash python=3.9
 conda activate textwash
 pip install -r requirements.txt
 ```
-Do not forget to download the models and paste them into the data folder!
+Do not forget to [download the models](https://drive.google.com/file/d/1YBccngYE3lvod87TI6UIhBzrN7nY9vHS/view?usp=sharing) and paste them into the data folder!
 
 After preparing the folder, you can run the code below!
 ```console
 python3 anon.py --language en --input_dir my_documents --output_dir anonymised_documents --cpu
 ```
 
+With this, this text here:
+```text
+In this interview, we talk with Sean Curtis about his wife Marion Aaker. Sean Curtis said that his wife has been wheezing since some weeks, while he mainly feels short of breath. Both born in 1965, Doctors may think it is related to their age and that were born in Manchester.
+```
+
+Changes to this:
+```text
+In this interview, we talk with PERSON_FIRSTNAME_1 PERSON_LASTNAME_1 about PRONOUN wife PERSON_FIRSTNAME_2 PERSON_LASTNAME_2. PERSON_FIRSTNAME_1 PERSON_LASTNAME_1 said that PRONOUN wife has been wheezing since some weeks, while PRONOUN mainly feels short of breath. Both born in DATE_1, Doctors DATE_1 think it is related to their age and that were born in LOCATION_1.
+```
+
 ## Collaborating - Create folder structure
 
 In last Thursday's session on collaboration, you learned more about structuring a research project. Did you know that Python can help you create a structured project folder?
 
-The following code creates a folder structure as recommended by the [good-enough-project](https://realpython.com/readme-python-project/):
+The following code creates a folder structure as recommended by the [good-enough-project](https://github.com/bvreede/good-enough-project):
 
 
 ```python
@@ -150,6 +161,31 @@ Although we’ve already created an empty README file, there are useful template
 
 What we might want to use Python for directly is inserting file paths into a README. For that, we can reuse content from another Programming Café session.
 
+The goal is to create the following overview:
+TestProject/
+├──.Rhistory
+├──LICENSE.md
+├──requirements.txt
+├──README.md
+├──.gitignore
+├──CITATION.md
+├──validated_files.csv
+	├──bin/
+	├──config/
+	├──docs/
+		├──manuscript/
+		├──notes.txt
+		├──reports/
+	├──results/
+		├──output/
+		├──figures/
+	├──data/
+		├──temp/
+		├──processed/
+		├──raw/
+	├──src/
+
+
 
 ```python
 from pathlib import Path
@@ -179,6 +215,13 @@ You can also use Python to verify whether your file names match the pattern you�
 - https://regexr.com
 - https://regex101.com
 
+The example below matches it to the following file names `YYYYMMDD_ExperimentID_Task_Version`:
+
+It fits the following file names:
+- 19951231_exp1543_interview_v1.csv
+- 20030128_exp1549_survey_v2.csv
+
+If you want to know how to rename your files, have a look at the content of our [previous programming café](https://eur-nl.github.io/rs_training/lesson_2.html)!
 
 
 ```python
@@ -237,5 +280,12 @@ validate_filetype(Path.home() / 'Documents' / 'TestProject')
     .DS_Store is not in a preferred file format
 
 
-### Other useful tools and software
+### Other useful tools and links
 - Quarto
+- [OpenRefine](https://openrefine.org)
+- [Software Management Plan](https://smp.research.software/interview?i=docassemble.SMPDecisionTree:data/questions/software.yml#page1): This decision tree tool helps you to fill in your own software management plan. While it is not mandatory for EUR researchers, I can only recommend filling it.
+- Use [GitHub](https://github.com) to collaborate with others on your code
+- [CodeMeta](https://codemeta.github.io)
+- [How to FAIRify your Research Software](https://www.rug.nl/digital-competence-centre/research-data/content-fragments-data-management/guide-on-fair-software-ug-dcc-pdf-v1-0-2.pdf)
+- [Assess your own software in terms of FAIR](https://fairsoftwarechecklist.net/v0.2/)
+- [Recommendations for FAIR software](https://fair-software.nl/)
