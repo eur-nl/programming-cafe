@@ -36,7 +36,7 @@
 
 
 
-<link href="./css/custom.css?1773404226" rel="stylesheet">
+<link href="./css/custom.css?1773411512" rel="stylesheet">
 
 
 
@@ -304,11 +304,12 @@
 <p><strong>Other useful tools and software</strong></p>
 <ul>
 <li>Quarto</li>
+<li>Software Management Plan</li>
 </ul>
 <p>Hopefully, you also see some known faces in the room: Some of the Data Stewards joined us today to answer your questions!</p>
 <h2 id="data-sharing--de-identification-of-data">Data sharing – De-identification of data</h2>
 <p>In last Tuesday&rsquo;s session, you learned how to share your data responsibly. You explored the de-identification of qualitative data and learned how to prepare your publication package.</p>
-<p>Programming can assist you in de-identifying your data! Using research software, you can choose to either pseudonymize or anonymize it. Let’s take a closer look at how we can replace personal names, distort ages, and redact ZIP codes in the data:</p>
+<p>Programming can assist you in de-identifying your data! Using research software, you can choose to either pseudonymize or anonymize it. Let’s take a closer look at how we can replace personal names, distort ages, and redact ZIP codes in <strong><a href="extras/lesson_5.zip">this data</a></strong>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Read in file</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> pathlib <span style="color:#f92672">import</span> Path
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas
@@ -370,17 +371,21 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(data_path <span style="color:#f92672">/</span> <span style="color:#e6db74">&#39;documentation.txt&#39;</span>, mode <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;w&#39;</span>, encoding <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;utf-8&#39;</span>) <span style="color:#66d9ef">as</span> docfile:
 </span></span><span style="display:flex;"><span>    print(document, file <span style="color:#f92672">=</span> docfile)
-</span></span></code></pre></div><p>To truly anonymize the data, I recommend using an open-source tool such as <a href="https://github.com/ben-aaron188/textwash">Textwash</a>. Let’s take a quick look at how to use it:</p>
+</span></span></code></pre></div><p>To truly anonymize the data instead, I recommend using an open-source tool such as <a href="https://github.com/ben-aaron188/textwash">Textwash</a>. Let’s take a quick look at how to use it:</p>
 <p>First, download the module from GitHub. Then, open the terminal, navigate to the directory containing the downloaded files, and enter the following commands</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>conda create -n textwash python=3.9
 </span></span><span style="display:flex;"><span>conda activate textwash
 </span></span><span style="display:flex;"><span>pip install -r requirements.txt
-</span></span></code></pre></div><p>Do not forget to download the models and paste them into the data folder!</p>
+</span></span></code></pre></div><p>Do not forget to <a href="https://drive.google.com/file/d/1YBccngYE3lvod87TI6UIhBzrN7nY9vHS/view?usp=sharing">download the models</a> and paste them into the data folder!</p>
 <p>After preparing the folder, you can run the code below!</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>python3 anon.py --language en --input_dir my_documents --output_dir anonymised_documents --cpu
+</span></span></code></pre></div><p>With this, this text here:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>In this interview, we talk with Sean Curtis about his wife Marion Aaker. Sean Curtis said that his wife has been wheezing since some weeks, while he mainly feels short of breath. Both born in 1965, Doctors may think it is related to their age and that were born in Manchester.
+</span></span></code></pre></div><p>Changes to this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>In this interview, we talk with PERSON_FIRSTNAME_1 PERSON_LASTNAME_1 about PRONOUN wife PERSON_FIRSTNAME_2 PERSON_LASTNAME_2. PERSON_FIRSTNAME_1 PERSON_LASTNAME_1 said that PRONOUN wife has been wheezing since some weeks, while PRONOUN mainly feels short of breath. Both born in DATE_1, Doctors DATE_1 think it is related to their age and that were born in LOCATION_1.
 </span></span></code></pre></div><h2 id="collaborating---create-folder-structure">Collaborating - Create folder structure</h2>
 <p>In last Thursday&rsquo;s session on collaboration, you learned more about structuring a research project. Did you know that Python can help you create a structured project folder?</p>
-<p>The following code creates a folder structure as recommended by the <a href="https://realpython.com/readme-python-project/">good-enough-project</a>:</p>
+<p>The following code creates a folder structure as recommended by the <a href="https://github.com/bvreede/good-enough-project">good-enough-project</a>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pathlib <span style="color:#f92672">import</span> Path
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create_folder_setup</span>(project_name):
@@ -407,6 +412,29 @@
 </span></span></code></pre></div><p>Although we’ve already created an empty README file, there are useful templates available to help you complete it. In <a href="https://realpython.com/readme-python-project/">this tutorial</a>, you’ll find specific editors designed to assist with filling them in.</p>
 <h2 id="collaborating---how-to-paste-the-folder-and-file-structure-into-the-readme">Collaborating - How to paste the folder and file structure into the README</h2>
 <p>What we might want to use Python for directly is inserting file paths into a README. For that, we can reuse content from another Programming Café session.</p>
+<p>The goal is to create the following overview:
+TestProject/
+├──.Rhistory
+├──LICENSE.md
+├──requirements.txt
+├──README.md
+├──.gitignore
+├──CITATION.md
+├──validated_files.csv
+├──bin/
+├──config/
+├──docs/
+├──manuscript/
+├──notes.txt
+├──reports/
+├──results/
+├──output/
+├──figures/
+├──data/
+├──temp/
+├──processed/
+├──raw/
+├──src/</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pathlib <span style="color:#f92672">import</span> Path
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">generate_README</span>(project_path):
@@ -432,6 +460,13 @@
 <li><a href="https://regexr.com">https://regexr.com</a></li>
 <li><a href="https://regex101.com">https://regex101.com</a></li>
 </ul>
+<p>The example below matches it to the following file names <code>YYYYMMDD_ExperimentID_Task_Version</code>:</p>
+<p>It fits the following file names:</p>
+<ul>
+<li>19951231_exp1543_interview_v1.csv</li>
+<li>20030128_exp1549_survey_v2.csv</li>
+</ul>
+<p>If you want to know how to rename your files, have a look at the content of our <a href="https://eur-nl.github.io/rs_training/lesson_2.html">previous programming café</a>!</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pathlib <span style="color:#f92672">import</span> Path
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> re
 </span></span><span style="display:flex;"><span>
@@ -477,9 +512,16 @@
 .DS_Store is not in a preferred file format
 .DS_Store is not in a preferred file format
 </code></pre>
-<h3 id="other-useful-tools-and-software">Other useful tools and software</h3>
+<h3 id="other-useful-tools-and-links">Other useful tools and links</h3>
 <ul>
 <li>Quarto</li>
+<li><a href="https://openrefine.org">OpenRefine</a></li>
+<li><a href="https://smp.research.software/interview?i=docassemble.SMPDecisionTree:data/questions/software.yml#page1">Software Management Plan</a>: This decision tree tool helps you to fill in your own software management plan. While it is not mandatory for EUR researchers, I can only recommend filling it.</li>
+<li>Use <a href="https://github.com">GitHub</a> to collaborate with others on your code</li>
+<li><a href="https://codemeta.github.io">CodeMeta</a></li>
+<li><a href="https://www.rug.nl/digital-competence-centre/research-data/content-fragments-data-management/guide-on-fair-software-ug-dcc-pdf-v1-0-2.pdf">How to FAIRify your Research Software</a></li>
+<li><a href="https://fairsoftwarechecklist.net/v0.2/">Assess your own software in terms of FAIR</a></li>
+<li><a href="https://fair-software.nl/">Recommendations for FAIR software</a></li>
 </ul>
 
                         </div>
