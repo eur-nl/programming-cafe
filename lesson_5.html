@@ -36,7 +36,7 @@
 
 
 
-<link href="./css/custom.css?1773411512" rel="stylesheet">
+<link href="./css/custom.css?1773413167" rel="stylesheet">
 
 
 
@@ -371,7 +371,10 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(data_path <span style="color:#f92672">/</span> <span style="color:#e6db74">&#39;documentation.txt&#39;</span>, mode <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;w&#39;</span>, encoding <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;utf-8&#39;</span>) <span style="color:#66d9ef">as</span> docfile:
 </span></span><span style="display:flex;"><span>    print(document, file <span style="color:#f92672">=</span> docfile)
-</span></span></code></pre></div><p>To truly anonymize the data instead, I recommend using an open-source tool such as <a href="https://github.com/ben-aaron188/textwash">Textwash</a>. Let’s take a quick look at how to use it:</p>
+</span></span></code></pre></div><p>Following, the documented version of the text would look like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>In this interview, we talk with User_1 [Replaced - Sean Curtis] about his wife User_4 [Replaced - Marion Aaker]. User_1 [Replaced - Sean Curtis] said that his wife has been wheezing since some weeks, while he mainly feels short of breath. Both born in the 60s [Replaced - 1965], Doctors may think it is related to their age and that were born in England [Replaced - Manchester].
+</span></span></code></pre></div><h3 id="how-to-anonymize-your-data">How to anonymize your data</h3>
+<p>To truly anonymize the data instead, I recommend using an open-source tool such as <a href="https://github.com/ben-aaron188/textwash">Textwash</a>. Let’s take a quick look at how to use it:</p>
 <p>First, download the module from GitHub. Then, open the terminal, navigate to the directory containing the downloaded files, and enter the following commands</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>conda create -n textwash python=3.9
 </span></span><span style="display:flex;"><span>conda activate textwash
@@ -379,9 +382,9 @@
 </span></span></code></pre></div><p>Do not forget to <a href="https://drive.google.com/file/d/1YBccngYE3lvod87TI6UIhBzrN7nY9vHS/view?usp=sharing">download the models</a> and paste them into the data folder!</p>
 <p>After preparing the folder, you can run the code below!</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>python3 anon.py --language en --input_dir my_documents --output_dir anonymised_documents --cpu
-</span></span></code></pre></div><p>With this, this text here:</p>
+</span></span></code></pre></div><p>With this, this text here</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>In this interview, we talk with Sean Curtis about his wife Marion Aaker. Sean Curtis said that his wife has been wheezing since some weeks, while he mainly feels short of breath. Both born in 1965, Doctors may think it is related to their age and that were born in Manchester.
-</span></span></code></pre></div><p>Changes to this:</p>
+</span></span></code></pre></div><p>changes to this:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>In this interview, we talk with PERSON_FIRSTNAME_1 PERSON_LASTNAME_1 about PRONOUN wife PERSON_FIRSTNAME_2 PERSON_LASTNAME_2. PERSON_FIRSTNAME_1 PERSON_LASTNAME_1 said that PRONOUN wife has been wheezing since some weeks, while PRONOUN mainly feels short of breath. Both born in DATE_1, Doctors DATE_1 think it is related to their age and that were born in LOCATION_1.
 </span></span></code></pre></div><h2 id="collaborating---create-folder-structure">Collaborating - Create folder structure</h2>
 <p>In last Thursday&rsquo;s session on collaboration, you learned more about structuring a research project. Did you know that Python can help you create a structured project folder?</p>
@@ -412,30 +415,30 @@
 </span></span></code></pre></div><p>Although we’ve already created an empty README file, there are useful templates available to help you complete it. In <a href="https://realpython.com/readme-python-project/">this tutorial</a>, you’ll find specific editors designed to assist with filling them in.</p>
 <h2 id="collaborating---how-to-paste-the-folder-and-file-structure-into-the-readme">Collaborating - How to paste the folder and file structure into the README</h2>
 <p>What we might want to use Python for directly is inserting file paths into a README. For that, we can reuse content from another Programming Café session.</p>
-<p>The goal is to create the following overview:
-TestProject/
-├──.Rhistory
-├──LICENSE.md
-├──requirements.txt
-├──README.md
-├──.gitignore
-├──CITATION.md
-├──validated_files.csv
-├──bin/
-├──config/
-├──docs/
-├──manuscript/
-├──notes.txt
-├──reports/
-├──results/
-├──output/
-├──figures/
-├──data/
-├──temp/
-├──processed/
-├──raw/
-├──src/</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pathlib <span style="color:#f92672">import</span> Path
+<p>The goal is to create the following overview:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>TestProject/
+</span></span><span style="display:flex;"><span>├──.Rhistory
+</span></span><span style="display:flex;"><span>├──LICENSE.md
+</span></span><span style="display:flex;"><span>├──requirements.txt
+</span></span><span style="display:flex;"><span>├──README.md
+</span></span><span style="display:flex;"><span>├──.gitignore
+</span></span><span style="display:flex;"><span>├──CITATION.md
+</span></span><span style="display:flex;"><span>├──validated_files.csv
+</span></span><span style="display:flex;"><span>	├──bin/
+</span></span><span style="display:flex;"><span>	├──config/
+</span></span><span style="display:flex;"><span>	├──docs/
+</span></span><span style="display:flex;"><span>		├──manuscript/
+</span></span><span style="display:flex;"><span>		├──notes.txt
+</span></span><span style="display:flex;"><span>		├──reports/
+</span></span><span style="display:flex;"><span>	├──results/
+</span></span><span style="display:flex;"><span>		├──output/
+</span></span><span style="display:flex;"><span>		├──figures/
+</span></span><span style="display:flex;"><span>	├──data/
+</span></span><span style="display:flex;"><span>		├──temp/
+</span></span><span style="display:flex;"><span>		├──processed/
+</span></span><span style="display:flex;"><span>		├──raw/
+</span></span><span style="display:flex;"><span>	├──src/
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pathlib <span style="color:#f92672">import</span> Path
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">generate_README</span>(project_path):
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Open the Readme file, print the header and then all information about the files</span>
@@ -460,7 +463,7 @@ TestProject/
 <li><a href="https://regexr.com">https://regexr.com</a></li>
 <li><a href="https://regex101.com">https://regex101.com</a></li>
 </ul>
-<p>The example below matches it to the following file names <code>YYYYMMDD_ExperimentID_Task_Version</code>:</p>
+<p>The example below matches it to this pattern <code>YYYYMMDD_ExperimentID_Task_Version</code>.</p>
 <p>It fits the following file names:</p>
 <ul>
 <li>19951231_exp1543_interview_v1.csv</li>
@@ -514,16 +517,16 @@ TestProject/
 </code></pre>
 <h3 id="other-useful-tools-and-links">Other useful tools and links</h3>
 <ul>
-<li>Quarto</li>
-<li><a href="https://openrefine.org">OpenRefine</a></li>
+<li><a href="https://quarto.org">Quarto</a>: An open-source tools that helps you publish your code.</li>
+<li><a href="https://openrefine.org">OpenRefine</a>: An open-source tool that helps you clean your data without knowing how to program. Find an online tutorial <a href="https://datacarpentry.github.io/openrefine-socialsci/index.html">here</a>.</li>
 <li><a href="https://smp.research.software/interview?i=docassemble.SMPDecisionTree:data/questions/software.yml#page1">Software Management Plan</a>: This decision tree tool helps you to fill in your own software management plan. While it is not mandatory for EUR researchers, I can only recommend filling it.</li>
 <li>Use <a href="https://github.com">GitHub</a> to collaborate with others on your code</li>
-<li><a href="https://codemeta.github.io">CodeMeta</a></li>
-<li><a href="https://www.rug.nl/digital-competence-centre/research-data/content-fragments-data-management/guide-on-fair-software-ug-dcc-pdf-v1-0-2.pdf">How to FAIRify your Research Software</a></li>
+<li><a href="https://codemeta.github.io">CodeMeta</a>: A metadata standarf for your software</li>
+<li><a href="https://www.rug.nl/digital-competence-centre/research-data/content-fragments-data-management/guide-on-fair-software-ug-dcc-pdf-v1-0-2.pdf">How to FAIRify your Research Software</a>: Helpful tips to make your Research Software FAIR</li>
 <li><a href="https://fairsoftwarechecklist.net/v0.2/">Assess your own software in terms of FAIR</a></li>
 <li><a href="https://fair-software.nl/">Recommendations for FAIR software</a></li>
 </ul>
-
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"></code></pre></div>
                         </div>
                         
                         
