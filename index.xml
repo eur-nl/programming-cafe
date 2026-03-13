@@ -71,6 +71,13 @@
       <description>&lt;h1 id=&#34;clean-your-data-efficiently-using-python&#34;&gt;Clean your data efficiently using Python&lt;/h1&gt;&#xA;&lt;p&gt;Everyone has seen messy data before, extras spaces, symbols mixed with numbers, inconsistent spelling or data formats. All of these examples make the analysis of data more difficult.&lt;/p&gt;&#xA;&lt;p&gt;The data in itself is not &amp;ldquo;bad&amp;rdquo; data, but just not ready for analyses yet!&lt;/p&gt;&#xA;&lt;p&gt;In today&amp;rsquo;s session, I want to help you show how you can check whether your data is &amp;ldquo;messy&amp;rdquo; and how to get it ready for your analysis.&lt;/p&gt;</description>
     </item>
     <item>
+      <title></title>
+      <link>/lesson_5.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/lesson_5.html</guid>
+      <description>&lt;h1 id=&#34;learn-how-to-manage-your-data-using-research-software&#34;&gt;Learn how to manage your data using research software&lt;/h1&gt;&#xA;&lt;p&gt;In this fifth session of the Programming Café, we will have a look at the content of the Research Data Management Week and find out, whether and how we can automate or ease these processes using research software and/or tools.&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-will-we-cover&#34;&gt;What will we cover?&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Data sharing&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;De-identification of data&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Collaborating&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Automatic creation of project structures&lt;/li&gt;&#xA;&lt;li&gt;Generating README files&lt;/li&gt;&#xA;&lt;li&gt;Check your file naming automatically&lt;/li&gt;&#xA;&lt;li&gt;Check whether your file format is preferred&lt;/li&gt;&#xA;&lt;li&gt;Have a look at CodeMeta&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Other useful tools and software&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Contact us!</title>
       <link>/contact.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
