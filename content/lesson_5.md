@@ -171,13 +171,11 @@ What we might want to use Python for directly is inserting file paths into a REA
 The goal is to create the following overview:
 ```markdown text
 TestProject/
-├──.Rhistory
 ├──LICENSE.md
 ├──requirements.txt
 ├──README.md
 ├──.gitignore
 ├──CITATION.md
-├──validated_files.csv
 	├──bin/
 	├──config/
 	├──docs/
