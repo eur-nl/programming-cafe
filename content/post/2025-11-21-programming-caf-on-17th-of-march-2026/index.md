@@ -23,7 +23,6 @@ In this session, Data Stewards and Research Software trainers will collaborate t
  
 The second part of the session is hands-on. Are you stuck on a problem? Not sure how to apply what you’ve learned? Need some fresh ideas? Bring your code, your bugs, or your ideas and get practical help from EUR’s Research Software trainers. 
 
-Want to download the jupyter notebook directly? Find it **[here](extras/DataManagementwithSoftware.zip)**.
 ## Programme
 - **10:50-11:00** Walk-in
 - **11:00-12:00** Live Coding **Find the script [here](../lesson_5.html)**
