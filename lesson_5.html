@@ -36,7 +36,7 @@
 
 
 
-<link href="./css/custom.css?1773750156" rel="stylesheet">
+<link href="./css/custom.css?1773763508" rel="stylesheet">
 
 
 
@@ -307,6 +307,22 @@
 <li>Software Management Plan</li>
 </ul>
 <p>Hopefully, you also see some known faces in the room: Some of the Data Stewards joined us today to answer your questions!</p>
+<h1 id="preparation-for-the-session">Preparation for the session</h1>
+<p>Before we (or you at home) start diving into the content, make sure to open a fitting IDE (such as PyCharm and Visual Studio Code) or to install and open Jupyter notebook (You can do that using Anaconda).</p>
+<ul>
+<li>
+<p>EUR internals: Find PyCharm <a href="https://liveeur.sharepoint.com/sites/EUR-Intune-Devices/Lists/Software%20catalog/DispForm.aspx?ID=95">here</a></p>
+</li>
+<li>
+<p>Self-managed PC: Find PyCharm <a href="https://www.jetbrains.com/pycharm/">here</a></p>
+</li>
+<li>
+<p>EUR internals: Find Visual Studio Code <a href="https://liveeur.sharepoint.com/sites/EUR-Intune-Devices/Lists/Software%20catalog/DispForm.aspx?ID=98&amp;e=n4vPQP">here</a></p>
+</li>
+<li>
+<p>Self-managed PC: Find Visual Studio Code <a href="https://code.visualstudio.com">here</a></p>
+</li>
+</ul>
 <h2 id="data-sharing--de-identification-of-data">Data sharing – De-identification of data</h2>
 <p>In last Tuesday&rsquo;s session, you learned how to share your data responsibly. You explored the de-identification of qualitative data and learned how to prepare your publication package.</p>
 <p>Programming can assist you in de-identifying your data! Using research software, you can choose to either pseudonymize or anonymize it. Let’s take a closer look at how we can replace personal names, distort ages, and redact ZIP codes in <strong><a href="extras/lesson_5.zip">this data</a></strong>:</p>
@@ -321,31 +337,31 @@
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Replace the names with pseudonyms and save the new mapping</span>
 </span></span><span style="display:flex;"><span>df[<span style="color:#e6db74">&#39;Username&#39;</span>] <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;User_&#39;</span> <span style="color:#f92672">+</span> str(i) <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>, len(df) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)]
 </span></span><span style="display:flex;"><span>map <span style="color:#f92672">=</span> df[[<span style="color:#e6db74">&#39;Name&#39;</span>, <span style="color:#e6db74">&#39;Surname&#39;</span>, <span style="color:#e6db74">&#39;Username&#39;</span>]]
-</span></span><span style="display:flex;"><span>map<span style="color:#f92672">.</span>to_csv(data_path <span style="color:#f92672">/</span> <span style="color:#e6db74">&#34;mapping.csv&#34;</span>, index <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>)
+</span></span><span style="display:flex;"><span>map<span style="color:#f92672">.</span>to_csv(data_path <span style="color:#f92672">/</span> <span style="color:#e6db74">&#34;mapping.csv&#34;</span>, index<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Redact the ZIP Code</span>
-</span></span><span style="display:flex;"><span>df[<span style="color:#e6db74">&#39;ZIP Code&#39;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;ZIP Code&#39;</span>]<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x: str(x)[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;xxxx&#39;</span>)
+</span></span><span style="display:flex;"><span>df[<span style="color:#e6db74">&#39;ZIP_Code_redacted&#39;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;ZIP Code&#39;</span>]<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x: str(x)[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;xxxx&#39;</span>)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Shorten the Birth date to year and distort year</span>
-</span></span><span style="display:flex;"><span>df[<span style="color:#e6db74">&#39;Birth_Date_distorted&#39;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;Birth Date&#39;</span>]<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x: int(str(x)[<span style="color:#f92672">-</span><span style="color:#ae81ff">4</span>:])<span style="color:#f92672">+</span><span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span>df[<span style="color:#e6db74">&#39;Birth_Date_distorted&#39;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;Birth Date&#39;</span>]<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x: int(str(x)[<span style="color:#f92672">-</span><span style="color:#ae81ff">4</span>:]) <span style="color:#f92672">+</span> <span style="color:#ae81ff">5</span>)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># We can also round the number instead</span>
-</span></span><span style="display:flex;"><span>df[<span style="color:#e6db74">&#39;Birth_Date_rounded&#39;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;Birth Date&#39;</span>]<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x: round(int(str(x)[<span style="color:#f92672">-</span><span style="color:#ae81ff">4</span>:]), <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) )
+</span></span><span style="display:flex;"><span>df[<span style="color:#e6db74">&#39;Birth_Date_rounded&#39;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;Birth Date&#39;</span>]<span style="color:#f92672">.</span>apply(<span style="color:#66d9ef">lambda</span> x: round(int(str(x)[<span style="color:#f92672">-</span><span style="color:#ae81ff">4</span>:]), <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>))
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Print in new file</span>
-</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>drop(columns <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;Name&#39;</span>, <span style="color:#e6db74">&#39;Surname&#39;</span>])
-</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> df[[<span style="color:#e6db74">&#39;Username&#39;</span>, <span style="color:#e6db74">&#39;Birth_Date_rounded&#39;</span>, <span style="color:#e6db74">&#39;Gender&#39;</span>, <span style="color:#e6db74">&#39;ZIP Code&#39;</span>, <span style="color:#e6db74">&#39;Complaint&#39;</span>]]
-</span></span><span style="display:flex;"><span>df<span style="color:#f92672">.</span>to_csv(data_path <span style="color:#f92672">/</span> <span style="color:#e6db74">&#34;NewData.csv&#34;</span>, index <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>)
+</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>drop(columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;Name&#39;</span>, <span style="color:#e6db74">&#39;Surname&#39;</span>])
+</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> df[[<span style="color:#e6db74">&#39;Username&#39;</span>, <span style="color:#e6db74">&#39;Birth_Date_rounded&#39;</span>, <span style="color:#e6db74">&#39;Gender&#39;</span>, <span style="color:#e6db74">&#39;ZIP_Code_redacted&#39;</span>, <span style="color:#e6db74">&#39;Complaint&#39;</span>]]
+</span></span><span style="display:flex;"><span>df<span style="color:#f92672">.</span>to_csv(data_path <span style="color:#f92672">/</span> <span style="color:#e6db74">&#34;NewData.csv&#34;</span>, index<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>print(df)
-</span></span></code></pre></div><pre><code>  Username  Birth_Date_rounded  Gender ZIP Code        Complaint
-0   User_1                1960    Male    2xxxx  Short of breath
-1   User_2                1960    Male    2xxxx       Chest pain
-2   User_3                1960  Female    2xxxx      Painful eye
-3   User_4                1960  Female    2xxxx         Wheezing
-4   User_5                1960  Female    2xxxx    Aching joints
-5   User_6                1960  Female    2xxxx       Chest pain
-6   User_7                1960    Male    2xxxx  Short of breath
+</span></span></code></pre></div><pre><code>  Username  Birth_Date_rounded  Gender ZIP_Code_redacted        Complaint
+0   User_1                1960    Male             2xxxx  Short of breath
+1   User_2                1960    Male             2xxxx       Chest pain
+2   User_3                1960  Female             2xxxx      Painful eye
+3   User_4                1960  Female             2xxxx         Wheezing
+4   User_5                1960  Female             2xxxx    Aching joints
+5   User_6                1960  Female             2xxxx       Chest pain
+6   User_7                1960    Male             2xxxx  Short of breath
 </code></pre>
 <p>If you have saved a specific mapping, you can use it to pseudonymize textual data. In the following example, we used the generated usernames to replace the names in the text.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Use your mapping file to change texts</span>
@@ -513,7 +529,7 @@
 <li><a href="https://openrefine.org">OpenRefine</a>: An open-source tool that helps you clean your data without knowing how to program. Find an online tutorial <a href="https://datacarpentry.github.io/openrefine-socialsci/index.html">here</a>.</li>
 <li><a href="https://smp.research.software/interview?i=docassemble.SMPDecisionTree:data/questions/software.yml#page1">Software Management Plan</a>: This decision tree tool helps you to fill in your own software management plan. While it is not mandatory for EUR researchers, I can only recommend filling it.</li>
 <li>Use <a href="https://github.com">GitHub</a> to collaborate with others on your code</li>
-<li><a href="https://codemeta.github.io">CodeMeta</a>: A metadata standarf for your software</li>
+<li><a href="https://codemeta.github.io">CodeMeta</a>: A metadata standard for your software</li>
 <li><a href="https://www.rug.nl/digital-competence-centre/research-data/content-fragments-data-management/guide-on-fair-software-ug-dcc-pdf-v1-0-2.pdf">How to FAIRify your Research Software</a>: Helpful tips to make your Research Software FAIR</li>
 <li><a href="https://fairsoftwarechecklist.net/v0.2/">Assess your own software in terms of FAIR</a></li>
 <li><a href="https://fair-software.nl/">Recommendations for FAIR software</a></li>
