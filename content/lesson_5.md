@@ -19,11 +19,20 @@ In this fifth session of the Programming Café, we will have a look at the conte
 
 Hopefully, you also see some known faces in the room: Some of the Data Stewards joined us today to answer your questions!
 
+# Preparation for the session
+
+Before we (or you at home) start diving into the content, make sure to open a fitting IDE (such as PyCharm and Visual Studio Code) or to install and open Jupyter notebook (You can do that using Anaconda).
+
+- EUR internals: Find PyCharm [here](https://liveeur.sharepoint.com/sites/EUR-Intune-Devices/Lists/Software%20catalog/DispForm.aspx?ID=95)
+- Self-managed PC: Find PyCharm [here](https://www.jetbrains.com/pycharm/)
+
+- EUR internals: Find Visual Studio Code [here](https://liveeur.sharepoint.com/sites/EUR-Intune-Devices/Lists/Software%20catalog/DispForm.aspx?ID=98&e=n4vPQP)
+- Self-managed PC: Find Visual Studio Code [here](https://code.visualstudio.com)
+
 ## Data sharing – De-identification of data
 In last Tuesday's session, you learned how to share your data responsibly. You explored the de-identification of qualitative data and learned how to prepare your publication package.
 
 Programming can assist you in de-identifying your data! Using research software, you can choose to either pseudonymize or anonymize it. Let’s take a closer look at how we can replace personal names, distort ages, and redact ZIP codes in **[this data](extras/lesson_5.zip)**:
-
 
 ```python
 # Read in file
@@ -37,33 +46,33 @@ df = pandas.read_csv(data_path / "Example_Data.csv")
 # Replace the names with pseudonyms and save the new mapping
 df['Username'] = ['User_' + str(i) for i in range(1, len(df) + 1)]
 map = df[['Name', 'Surname', 'Username']]
-map.to_csv(data_path / "mapping.csv", index = False)
+map.to_csv(data_path / "mapping.csv", index=False)
 
 # Redact the ZIP Code
-df['ZIP Code'] = df['ZIP Code'].apply(lambda x: str(x)[0] + 'xxxx')
+df['ZIP_Code_redacted'] = df['ZIP Code'].apply(lambda x: str(x)[0] + 'xxxx')
 
 # Shorten the Birth date to year and distort year
-df['Birth_Date_distorted'] = df['Birth Date'].apply(lambda x: int(str(x)[-4:])+5)
+df['Birth_Date_distorted'] = df['Birth Date'].apply(lambda x: int(str(x)[-4:]) + 5)
 
 # We can also round the number instead
-df['Birth_Date_rounded'] = df['Birth Date'].apply(lambda x: round(int(str(x)[-4:]), -1) )
+df['Birth_Date_rounded'] = df['Birth Date'].apply(lambda x: round(int(str(x)[-4:]), -1))
 
 # Print in new file
-df = df.drop(columns = ['Name', 'Surname'])
-df = df[['Username', 'Birth_Date_rounded', 'Gender', 'ZIP Code', 'Complaint']]
-df.to_csv(data_path / "NewData.csv", index = False)
+df = df.drop(columns=['Name', 'Surname'])
+df = df[['Username', 'Birth_Date_rounded', 'Gender', 'ZIP_Code_redacted', 'Complaint']]
+df.to_csv(data_path / "NewData.csv", index=False)
 
 print(df)
 ```
 
-      Username  Birth_Date_rounded  Gender ZIP Code        Complaint
-    0   User_1                1960    Male    2xxxx  Short of breath
-    1   User_2                1960    Male    2xxxx       Chest pain
-    2   User_3                1960  Female    2xxxx      Painful eye
-    3   User_4                1960  Female    2xxxx         Wheezing
-    4   User_5                1960  Female    2xxxx    Aching joints
-    5   User_6                1960  Female    2xxxx       Chest pain
-    6   User_7                1960    Male    2xxxx  Short of breath
+      Username  Birth_Date_rounded  Gender ZIP_Code_redacted        Complaint
+    0   User_1                1960    Male             2xxxx  Short of breath
+    1   User_2                1960    Male             2xxxx       Chest pain
+    2   User_3                1960  Female             2xxxx      Painful eye
+    3   User_4                1960  Female             2xxxx         Wheezing
+    4   User_5                1960  Female             2xxxx    Aching joints
+    5   User_6                1960  Female             2xxxx       Chest pain
+    6   User_7                1960    Male             2xxxx  Short of breath
 
 
 If you have saved a specific mapping, you can use it to pseudonymize textual data. In the following example, we used the generated usernames to replace the names in the text.
@@ -278,13 +287,12 @@ def validate_filetype(project_path):
 
 validate_filetype(Path.home() / 'Documents' / 'TestProject')
 ```
-
 ### Other useful tools and links
 - [Quarto](https://quarto.org): An open-source tools that helps you publish your code.
 - [OpenRefine](https://openrefine.org): An open-source tool that helps you clean your data without knowing how to program. Find an online tutorial [here](https://datacarpentry.github.io/openrefine-socialsci/index.html).
 - [Software Management Plan](https://smp.research.software/interview?i=docassemble.SMPDecisionTree:data/questions/software.yml#page1): This decision tree tool helps you to fill in your own software management plan. While it is not mandatory for EUR researchers, I can only recommend filling it.
 - Use [GitHub](https://github.com) to collaborate with others on your code
-- [CodeMeta](https://codemeta.github.io): A metadata standarf for your software
+- [CodeMeta](https://codemeta.github.io): A metadata standard for your software
 - [How to FAIRify your Research Software](https://www.rug.nl/digital-competence-centre/research-data/content-fragments-data-management/guide-on-fair-software-ug-dcc-pdf-v1-0-2.pdf): Helpful tips to make your Research Software FAIR
 - [Assess your own software in terms of FAIR](https://fairsoftwarechecklist.net/v0.2/)
 - [Recommendations for FAIR software](https://fair-software.nl/)
