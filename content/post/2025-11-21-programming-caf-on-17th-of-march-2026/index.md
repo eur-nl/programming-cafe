@@ -6,7 +6,7 @@ categories: [news]
 tags: []
 banner: /images/logo_no5.jpg
 summary: "**Data Management Week meets Programming Café**: Learn how to manage your data using research software!"
-weight: 5
+weight: 104
 ---
 
 <img src= "/programming-cafe/images/logo_no5.jpg" style = "width:20%;height:20%">

@@ -32,6 +32,9 @@ The second part of the Café is designed to help you with your projects! Any que
 ### Preparation
 Bring your own laptop!
 
+### Registration
+Please register [here](https://my.eur.nl/en/eur-employee/events/programming-cafe-get-ready-program-learn-how-ides-pycharm-and-virtual-environments-support-you-every-2026-04-14)
+
 ### Extras
 We will offer some snacks!
 

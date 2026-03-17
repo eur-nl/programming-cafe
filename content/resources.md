@@ -22,7 +22,8 @@ The following content was and is continuously inspired by our Café colleagues f
 
 ### Within EUR
 - **Data Carpentries for Social Sciences and Humanities** This course gives an introduction to R and nice tools such as OpenRefine. If you are an R beginner, attending this course is recommended. The next session will be in March 2026.
-- **Introduction to Python for Researchers** In January this course will give you an introduction to Programming Fundamentals using Python. 
+- **Introduction to Python for Researchers** In January, this course will give you an introduction to Programming Fundamentals using Python. 
+- Cannot make it to the course or the Café, but you are interested in the content? Find the all EUR Research Software courses [here](https://eur-nl.github.io/rs_training/)
 
 ### National level
 - [**Netherlands eScience center**](https://www.esciencecenter.nl/digital-skills/) The eScience center regularly offers intermediate programming courses for researchers and support staff
