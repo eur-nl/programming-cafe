@@ -2,7 +2,7 @@
 title: Programming Café on 17th of March 2026
 author: Package Build
 slug: programming-caf-on-17th-of-march-2026
-categories: [news]
+categories: [archive]
 tags: []
 banner: /images/logo_no5.jpg
 summary: "**Data Management Week meets Programming Café**: Learn how to manage your data using research software!"
