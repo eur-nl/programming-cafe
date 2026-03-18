@@ -5,7 +5,7 @@ slug: programming-caf-on-14th-of-april-2026
 categories: [news]
 tags: []
 banner: /images/logo_no6.jpg
-summary: "Our next Programming Café has been scheduled!"
+summary: "Get ready to program! Learn how IDEs like PyCharm (and virtual environments) support you every step of the way"
 weight: 6
 ---
 
@@ -16,16 +16,16 @@ weight: 6
 
 ### Join us for more programming!
 
-We will host our next Programming Café on 14th of April at 11:00 (until 13:00).
+We will host our next Programming Café on 14th of April at 11:00 (until 13:00) in Langeveld 3.18.
 <br>
 
-#### Topic
-The topic of the session still needs to be decided. After the initial presentation, you have time to ask question.
+#### Topic =  Get ready to program! Learn how IDEs like PyCharm (and virtual environments) support you every step of the way
+In this session, you will learn how to program beyond Jupyter notebooks and use integrated development environments (IDEs) such as PyCharm and Visual Studio Code to run your code.
+
 The second part of the Café is designed to help you with your projects! Any questions in regard to how to use the learned knowledge for your own code? Struggling with a bug? Need some brainstorming with colleagues? We got your back!
 
 ## Programme
-- **10:50-11:00** Walk-in
-- **11:00-12:00** Live Coding or Presentation
+- **11:00-12:00** Live Coding 
 - **12:00-12:15** Break & Begin Lunch
 - **12:15-13:00** Time to eat, collaborate, ask question and try out your new skills
 

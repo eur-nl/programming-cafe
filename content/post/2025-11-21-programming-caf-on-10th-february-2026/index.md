@@ -5,7 +5,7 @@ slug: programming-caf-on-10th-february-2026
 categories: [archive]
 tags: []
 banner: /images/logo_no4.jpg
-summary: "Another Programming Café has been scheduled!"
+summary: "Clean your data using Python!"
 weight: 103
 ---
 
@@ -30,7 +30,7 @@ Are you interested in learning more about OpenRefine, the tool that we previousl
 
 ## Programme
 - **10:50-11:00** Walk-in
-- **11:00-12:00** Live Coding: **Find the script [here](../lesson_4.html)**
+- **11:00-12:00** Live Coding: **Find the script [here](https://eur-nl.github.io/rs_training/DataCleaning.html)**
 - **12:00-12:15** Break & Begin Lunch
 - **12:15-13:00** Time to eat, collaborate, ask question and try out your new skills
 

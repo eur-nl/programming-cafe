@@ -25,7 +25,7 @@ The second part of the session is hands-on. Are you stuck on a problem? Not sure
 
 ## Programme
 - **10:50-11:00** Walk-in
-- **11:00-12:00** Live Coding **Find the script [here](../lesson_5.html)**
+- **11:00-12:00** Live Coding **Find the script [here](https://eur-nl.github.io/rs_training/DataManagementwithSoftware.html)**
 - **12:00-12:15** Break & Begin Lunch
 - **12:15-12:45** Time to eat, collaborate, ask question and try out your new skills
 
