@@ -5,7 +5,7 @@ slug: programming-caf-on-12th-of-may-2026
 categories: [news]
 tags: []
 banner: /images/logo_no7.jpg
-summary: "Our next Programming Café has been scheduled!"
+summary: "Introduction to JASP"
 weight: 7
 ---
 
@@ -19,8 +19,8 @@ weight: 7
 We will host our next Programming Café on 12th of May at 11:00 (until 13:00).
 <br>
 
-#### Topic
-The topic of the session still needs to be decided. After the initial presentation, you have time to ask question.
+#### Topic - Introduction to JASP
+The topic of the session is "Introduction to JASP". More information will follow soon. After the initial presentation, you have time to ask question.
 The second part of the Café is designed to help you with your projects! Any questions in regard to how to use the learned knowledge for your own code? Struggling with a bug? Need some brainstorming with colleagues? We got your back!
 
 ## Programme
