@@ -5,9 +5,10 @@ slug: programming-caf-on-13th-of-january-2026
 categories: [archive]
 tags: []
 banner: /images/Logo_3.jpg
-summary: "Our third Programming Café has been scheduled!"
+summary: "Using the Command Line"
 weight: 102
 ---
+
 
 <img src= "/programming-cafe/images/Logo_3.jpg" style = "width:20%;height:20%">
 
@@ -18,14 +19,15 @@ weight: 102
 We will host our third Programming Café on 13th of January at 11:00 (until 13:00).
 <br>
 
-#### Topic
+#### Topic - Using the Command Line
 The topic of the third session will be "Using the Command Line - All the cool kids are doing it". In this Programming Café session, our research software engineer Allan van Hulst will explore the fundamentals of using the command line with you. You’ll get familiar with the basics of the bash shell, understand I/O and how to use the output from one command as an input to the other as well as essentials of sed and grep.
 The second part of the Café is designed to help you with your projects! Any questions in regard to how to use the learned knowledge for your own code? Struggling with a bug? Need some brainstorming with colleagues? We got your back!
 
-
+Find the slides **[here](https://eur-nl.github.io/rs_training/bash.html)**.
 
 ## Programme
-- **11:00-12:00** Presentation (Find the slides **[here](https://eur-nl.github.io/rs_training/bash.html)**)
+- **10:50-11:00** Walk-in
+- **11:00-12:00** Live Coding
 - **12:00-12:15** Break & Begin Lunch
 - **12:15-13:00** Time to eat, collaborate, ask question and try out your new skills
 
