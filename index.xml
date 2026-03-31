@@ -19,7 +19,7 @@
       <link>/post/programming-caf-on-12th-of-may-2026.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/post/programming-caf-on-12th-of-may-2026.html</guid>
-      <description>Our next Programming Café has been scheduled!</description>
+      <description>JASP – Discover the Open-Source Alternative to SPSS</description>
     </item>
     <item>
       <title>Programming Café on 16th of June 2026</title>
@@ -47,7 +47,7 @@
       <link>/post/programming-caf-on-13th-of-january-2026.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/post/programming-caf-on-13th-of-january-2026.html</guid>
-      <description>Our third Programming Café has been scheduled!</description>
+      <description>Using the Command Line</description>
     </item>
     <item>
       <title>Programming Café on 10th February 2026</title>
@@ -64,20 +64,6 @@
       <description>&lt;strong&gt;Data Management Week meets Programming Café&lt;/strong&gt;: Learn how to manage your data using research software!</description>
     </item>
     <item>
-      <title></title>
-      <link>/lesson_4.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/lesson_4.html</guid>
-      <description>&lt;h1 id=&#34;clean-your-data-efficiently-using-python&#34;&gt;Clean your data efficiently using Python&lt;/h1&gt;&#xA;&lt;p&gt;Everyone has seen messy data before, extras spaces, symbols mixed with numbers, inconsistent spelling or data formats. All of these examples make the analysis of data more difficult.&lt;/p&gt;&#xA;&lt;p&gt;The data in itself is not &amp;ldquo;bad&amp;rdquo; data, but just not ready for analyses yet!&lt;/p&gt;&#xA;&lt;p&gt;In today&amp;rsquo;s session, I want to help you show how you can check whether your data is &amp;ldquo;messy&amp;rdquo; and how to get it ready for your analysis.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>/lesson_5.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/lesson_5.html</guid>
-      <description>&lt;h1 id=&#34;learn-how-to-manage-your-data-using-research-software&#34;&gt;Learn how to manage your data using research software&lt;/h1&gt;&#xA;&lt;p&gt;In this fifth session of the Programming Café, we will have a look at the content of the Research Data Management Week and find out, whether and how we can automate or ease these processes using research software and/or tools.&lt;/p&gt;&#xA;&lt;h3 id=&#34;what-will-we-cover&#34;&gt;What will we cover?&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Data sharing&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;De-identification of data&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Collaborating&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Automatic creation of project structures&lt;/li&gt;&#xA;&lt;li&gt;Generating README files&lt;/li&gt;&#xA;&lt;li&gt;Check your file naming automatically&lt;/li&gt;&#xA;&lt;li&gt;Check whether your file format is preferred&lt;/li&gt;&#xA;&lt;li&gt;Have a look at CodeMeta&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Other useful tools and software&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Contact us!</title>
       <link>/contact.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -90,13 +76,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/faq.html</guid>
       <description>&lt;h2 id=&#34;1-who-is-it-for&#34;&gt;1. Who is it for?&lt;/h2&gt;&#xA;&lt;p&gt;The Programming Café is for researchers (incl. PhDs) of all levels of programming, regardless of their field of study or level of experience.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Beginner programmers can find a supportive environment that will connect you with like-minded, but also help you learn how to code and get the help you need&lt;/li&gt;&#xA;&lt;li&gt;Advanced programmers can share their expertise and connect with other skilled programmers to stay up-to-date with the latest trends&lt;/li&gt;&#xA;&lt;li&gt;Interdisciplinary researchers can find a supportive and collaborative environment here where they can learn programming skills that are relevant to their research&lt;/li&gt;&#xA;&lt;li&gt;Data specialists can find a platform to connect with other researchers who share their interest, learn from each other and collaborate on data-driven research projects&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;2-why-should-i-invest-my-time&#34;&gt;2. Why should I invest my time?&lt;/h2&gt;&#xA;&lt;p&gt;Programming can be a daunting task, especially when you are just starting out, but it does not have to be a lonely one. If you help us building the community, we can support each other, learn from each other and grow together.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Lesson script</title>
-      <link>/lesson_2.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/lesson_2.html</guid>
-      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;lesson-script---programming-café-on-9-dec&#34;&gt;Lesson script - Programming Café on 9 Dec&lt;/h1&gt;&#xA;&lt;p&gt;In this second session of the Programming Café, we’ll dive into how to use Python scripts to automate repetitive tasks in your research. We’ll explore the basics of automation, focusing on how to effectively move, rename and copy your files and write clear, functional scripts.&lt;/p&gt;&#xA;&lt;p&gt;We will start with a question: Which tasks would you like to automate in your research ?&#xA;I hope that I can show you some tricks for these tasks today.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Resources</title>
