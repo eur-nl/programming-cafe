@@ -25,18 +25,18 @@ In this session, you will learn how to program beyond Jupyter notebooks and use 
 The second part of the Café is designed to help you with your projects! Any questions in regard to how to use the learned knowledge for your own code? Struggling with a bug? Need some brainstorming with colleagues? We got your back!
 
 ## Programme
-- **11:00-12:00** Live Coding 
+- **11:00-12:00** Presentation - Find the lesson script [here](https://eur-nl.github.io/rs_training/IDEs.html)
 - **12:00-12:15** Break & Begin Lunch
 - **12:15-13:00** Time to eat, collaborate, ask question and try out your new skills
 
 ### Preparation
-Bring your own laptop and install PyCharm or Visual Studio Code!
+Bring your own laptop and install PyCharm, RStudio or Visual Studio Code!
 
 ### Registration
 Please register [here](https://my.eur.nl/en/eur-employee/events/programming-cafe-get-ready-program-learn-how-ides-pycharm-and-virtual-environments-support-you-every-2026-04-14)
 
 ### Extras
-We will offer some snacks!
+We will offer pizza!
 
 ### Prior meeting keeps you from joining at 11:00?
 No problem! Join us after your meeting and we will bring you up-to-date. We will also upload the material after the session.
