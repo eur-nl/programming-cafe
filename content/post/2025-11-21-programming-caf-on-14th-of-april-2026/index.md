@@ -2,11 +2,11 @@
 title: Programming Café on 14th of April 2026
 author: Package Build
 slug: programming-caf-on-14th-of-april-2026
-categories: [news]
+categories: [archive]
 tags: []
 banner: /images/logo_no6.jpg
 summary: "Get ready to program! Learn how IDEs like PyCharm (and virtual environments) support you every step of the way"
-weight: 6
+weight: 106
 ---
 
 

@@ -19,7 +19,7 @@ weight: 8
 We will host our next Programming Café on 16th of June at 11:00 (until 13:00).
 <br>
 
-#### Topic
+#### Topic: Data Visualisation with R
 
 Are you interested how to visualise your data using R? In this Programming Café, you will learn how to produce scatter plots, boxplots, and barplots using ggplot, how to modify the aesthetics of an existing ggplot plot (including axis labels and colour) and how to build complex and customized plots from data in a data frame
 
