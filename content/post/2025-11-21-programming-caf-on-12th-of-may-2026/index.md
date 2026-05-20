@@ -28,7 +28,7 @@ In the second part, you will have the opportunity to apply what you have learned
 
 ## Programme
 - **10:50-11:00** Walk-in
-- **11:00-12:00** Presentation (find the slides [here](static/presentations/jasp_slides.pdf))
+- **11:00-12:00** Presentation (find the slides [here](presentations/jasp_slides.pdf))
 - **12:00-12:15** Break & Begin Lunch
 - **12:15-13:00** Time to eat, collaborate, ask question and try out your new skills
 
