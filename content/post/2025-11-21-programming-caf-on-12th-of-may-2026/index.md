@@ -2,11 +2,11 @@
 title: Programming Café on 12th of May 2026
 author: Package Build
 slug: programming-caf-on-12th-of-may-2026
-categories: [news]
+categories: [archive]
 tags: []
 banner: /images/logo_no7.jpg
 summary: "JASP – Discover the Open-Source Alternative to SPSS"
-weight: 7
+weight: 107
 ---
 
 
@@ -25,9 +25,10 @@ Have you ever wondered how to perform statistics once your SPSS student or emplo
 In the first part of this Café session, we will dive into JASP, an open-source alternative to SPSS. You will learn what JASP is, why it was developed, and how it can support your research. We will cover how to enter and import data into JASP, perform simple computations (e.g., calculating averages and medians), explore correlations and causality, and visualize your results.
 
 In the second part, you will have the opportunity to apply what you have learned. Are you facing a challenge or looking for new ideas? Bring your code, any issues you are encountering, or your project concepts, and receive practical assistance from EUR’s Research Software trainers.
+
 ## Programme
 - **10:50-11:00** Walk-in
-- **11:00-12:00** Live Coding or Presentation
+- **11:00-12:00** Presentation (find the slides [here](static/presentations/jasp_slides.pdf))
 - **12:00-12:15** Break & Begin Lunch
 - **12:15-13:00** Time to eat, collaborate, ask question and try out your new skills
 
