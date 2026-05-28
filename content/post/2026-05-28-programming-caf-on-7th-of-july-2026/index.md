@@ -10,7 +10,7 @@ summary: "A Short Introduction to Text Mining with Python"
 weight: 9
 ---
 
-<img src= "/programming-cafe/images/icon.jpg" style = "width:20%;height:20%">
+<img src= "/programming-cafe/images/icon_space.jpg" style = "width:20%;height:20%">
 
 <p>
 
@@ -19,7 +19,7 @@ weight: 9
 We will host our next Programming Café on 7th of July at 11:00 (until 13:00) in Langeveld 1.14.
 <br>
 
-#### Topic: Data Visualisation with R
+#### Topic: A Short Introduction to Text Mining with Python
 
 Text datasets have become highly prevalent in modern research. Today, researchers have access to digitized archives, social media feeds, and large collections of academic literature. Analyzing these massive volumes of text manually is rarely feasible. Luckily, we can analyze these datasets efficiently with the appropriate computational tools.
 
