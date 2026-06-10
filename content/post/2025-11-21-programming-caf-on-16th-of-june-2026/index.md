@@ -27,7 +27,7 @@ The second part of the Café is designed to help you with your projects! Any que
 
 ## Programme
 - **11:00-11:10** Walk-in
-- **11:10-12:10** Live Coding 
+- **11:10-12:10** Live Coding (Find the lessons script [here](https://eur-nl.github.io/rs_training/DataVisualisation.html))
 - **12:10-12:30** Break & Begin Lunch
 - **12:30-13:00** Time to eat, collaborate, ask question and try out your new skills
 
@@ -35,7 +35,7 @@ The second part of the Café is designed to help you with your projects! Any que
 Bring your own laptop and install RStudio.
 
 ### Extras
-We will offer some snacks!
+We will offer pizza!
 
 ### Prior meeting keeps you from joining at 11:00?
 No problem! Join us after your meeting and we will bring you up-to-date. We will also upload the material after the session.
