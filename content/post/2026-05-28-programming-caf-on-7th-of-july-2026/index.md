@@ -36,6 +36,9 @@ The second part of the Café is designed to help you with your projects! Any que
 ### Preparation
 Bring your own laptop.
 
+### Registration
+Please register [here](https://my.eur.nl/en/eur-employee/events/programming-cafe-short-introduction-text-mining-python-2026-07-07).
+
 ### Extras
 We will offer some snacks!
 

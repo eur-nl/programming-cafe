@@ -34,6 +34,9 @@ The second part of the Café is designed to help you with your projects! Any que
 ### Preparation
 Bring your own laptop and install RStudio.
 
+### Registration
+Please register [here](https://my.eur.nl/en/eur-employee/events/programming-cafe-data-visualization-r-2026-06-16)
+
 ### Extras
 We will offer pizza!
 
