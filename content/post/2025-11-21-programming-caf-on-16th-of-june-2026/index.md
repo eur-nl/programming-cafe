@@ -2,11 +2,11 @@
 title: Programming Café on 16th of June 2026
 author: Package Build
 slug: programming-caf-on-16th-of-june-2026
-categories: [news]
+categories: [archive]
 tags: []
 banner: /images/logo_no8.jpg
 summary: "Data Visualisation with R"
-weight: 8
+weight: 108
 ---
 
 
