@@ -2,8 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/post/programming-caf-on-16th-of-june-2026.html</loc>
-  </url><url>
     <loc>/post/programming-caf-on-7th-of-july-2026.html</loc>
     <lastmod>2026-05-28T00:00:00+00:00</lastmod>
   </url><url>
@@ -20,6 +18,8 @@
     <loc>/post/programming-caf-on-14th-of-april-2026.html</loc>
   </url><url>
     <loc>/post/programming-caf-on-12th-of-may-2026.html</loc>
+  </url><url>
+    <loc>/post/programming-caf-on-16th-of-june-2026.html</loc>
   </url><url>
     <loc>/categories/index.html</loc>
     <lastmod>2026-05-28T00:00:00+00:00</lastmod>
