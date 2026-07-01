@@ -29,7 +29,7 @@ The second part of the Café is designed to help you with your projects! Any que
 
 ## Programme
 - **11:00-11:10** Walk-in
-- **11:10-12:10** Live Coding 
+- **11:10-12:10** Live Coding (find the script [here](https://github.com/eur-nl/programming-cafe.git))
 - **12:10-12:30** Break & Begin Lunch
 - **12:30-13:00** Time to eat, collaborate, ask question and try out your new skills
 
