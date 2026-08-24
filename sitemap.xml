@@ -2,8 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/post/programming-caf-on-7th-of-july-2026.html</loc>
-    <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+    <loc>/post/programming-caf-on-6th-of-oct-2026.html</loc>
+  </url><url>
+    <loc>/post/programming-caf-on-10th-of-nov-2026.html</loc>
+  </url><url>
+    <loc>/post/programming-caf-on-8th-of-dec-2026.html</loc>
   </url><url>
     <loc>/post/programming-caf-on-18th-november-2025.html</loc>
   </url><url>
@@ -21,23 +24,26 @@
   </url><url>
     <loc>/post/programming-caf-on-16th-of-june-2026.html</loc>
   </url><url>
+    <loc>/post/programming-caf-on-7th-of-july-2026.html</loc>
+    <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/archive.html</loc>
+    <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/categories/index.html</loc>
     <lastmod>2026-05-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/index.html</loc>
     <lastmod>2026-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/news.html</loc>
-    <lastmod>2026-05-28T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/post/index.html</loc>
     <lastmod>2026-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/archive.html</loc>
   </url><url>
     <loc>/contact.html</loc>
   </url><url>
     <loc>/faq.html</loc>
+  </url><url>
+    <loc>/categories/news.html</loc>
   </url><url>
     <loc>/resources.html</loc>
   </url><url>
