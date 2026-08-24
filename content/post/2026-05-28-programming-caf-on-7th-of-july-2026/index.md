@@ -3,11 +3,11 @@ title: Programming Café on 7th of July 2026
 author: Package Build
 date: '2026-05-28'
 slug: programming-caf-on-7th-of-july-2026
-categories: [news]
+categories: [archive]
 tags: []
 banner: /images/icon.jpg
 summary: "A Short Introduction to Text Mining with Python"
-weight: 9
+weight: 109
 ---
 
 <img src= "/programming-cafe/images/icon_space.jpg" style = "width:20%;height:20%">
