@@ -5,7 +5,7 @@ slug: programming-caf-on-8th-of-dec-2026
 categories: [news]
 tags: []
 banner: /images/icon.jpg
-summary: ""
+summary: "The topic will follow soon!"
 weight: 3
 ---
 

@@ -5,7 +5,7 @@ slug: programming-caf-on-6th-of-oct-2026
 categories: [news]
 tags: []
 banner: /images/icon.jpg
-summary: ""
+summary: "The topic will follow soon!"
 weight: 1
 ---
 
