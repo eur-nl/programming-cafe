@@ -5,7 +5,7 @@ slug: programming-caf-on-8th-of-dec-2026
 categories: [news]
 tags: []
 banner: /images/icon.jpg
-summary: "The topic will follow soon!"
+summary: "FAIR Research Software"
 weight: 3
 ---
 
@@ -18,9 +18,12 @@ weight: 3
 We will host our next Programming Café on 8th of December at 11:00 (until 13:00) in Langeveld 3.12.
 <br>
 
-#### Topic: The topic will follow soon!
+#### Topic: FAIR Research Software
 
-In the first part, we will present a short programming-related topic to you.
+The FAIR principles are guidelines that help to improve the machine-actionability of your data and software, while also increasing its reusability by other researchers. They hope to guide you to make your data more findable, accessible, interoperable and resuable. This session gives you an introduction to FAIR Research Software.
+
+We will cover the FAIR Software principles and how to implement them (e.g. how to create a repository on GitHub, how to choose a license for your code, how to create a README and how to add environment files).
+
 The second part of the Café is designed to help you with your projects! Any questions in regard to how to use the learned knowledge for your own code? Struggling with a bug? Need some brainstorming with colleagues? We got your back!
 
 ## Programme

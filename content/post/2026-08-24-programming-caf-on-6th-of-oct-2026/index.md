@@ -5,7 +5,7 @@ slug: programming-caf-on-6th-of-oct-2026
 categories: [news]
 tags: []
 banner: /images/icon.jpg
-summary: "The topic will follow soon!"
+summary: "Back to Basics: Refresh Your R Skills"
 weight: 1
 ---
 
@@ -18,11 +18,17 @@ weight: 1
 We will host our next Programming Café on 6th of October at 11:00 (until 13:00) in Langeveld 2.18.
 <br>
 
-#### Topic: The topic will follow soon!
+#### Topic: Back to Basics: Refresh Your R Skills
 
-In the first part, we will present a short programming-related topic to you.
+Don’t we all know it? Summer ends and we’ve forgotten where we left off before the break. Has this happened with your R programming? No problem! In this session, we’ll refresh your R skills and give you a boost for the upcoming academic year. 
+
+On 6th of October, we will cover the technical basics (basic syntax, how to run R scripts, and how to install and load packages), simple data processing (how to import and explore your data), and basic visualization (using base plots and ggplot2).
 
 The second part of the Café is designed to help you with your projects! Any questions in regard to how to use the learned knowledge for your own code? Struggling with a bug? Need some brainstorming with colleagues? We got your back!
+
+##### I do not know how to program in R, can I still join?
+Have you never programmed in R but do have experience with other programming languages? Then this refresher session might be the perfect opportunity to get started with R.
+Have you never programmed in R or any other language before? You’re welcome to join and get a first look at R, but we recommend that you also follow one of our introductory R courses (e.g., this one).
 
 ## Programme
 - **11:00-11:10** Walk-in
