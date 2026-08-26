@@ -18,8 +18,7 @@ weight: 2
 We will host our next Programming Café on 10th of November at 13:00 (until 15:00) in Langeveld 2.16.
 <br>
 
-#### Topic: The topic will follow soon!
-
+#### Topic: Back to Basics: Refresh Your Python Skills
 
 Is the yearly dilemma back again? The new academic year starts and we’ve forgotten the basics of a skill that felt natural before. Has this happened with your Python programming? No problem! In this session, we’ll refresh your Python skills and give you a good start to the academic year.
 
