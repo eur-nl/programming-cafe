@@ -37,10 +37,10 @@ Have you never programmed in Python or any other language before?
 
 
 ## Programme
-- **11:00-11:10** Walk-in
-- **11:10-12:10** Live Coding 
-- **12:10-12:30** Break & Begin Lunch
-- **12:30-13:00** Time to eat, collaborate, ask question and try out your new skills
+- **13:00-13:10** Walk-in
+- **13:10-14:10** Live Coding 
+- **14:10-14:30** Break & Begin Lunch
+- **14:30-15:00** Time to eat, collaborate, ask question and try out your new skills
 
 ### Preparation
 Bring your own laptop.
@@ -51,6 +51,6 @@ Please register [here](https://eur-nl.libcal.com).
 ### Extras
 We will offer some snacks!
 
-### Prior meeting keeps you from joining at 11:00?
+### Prior meeting keeps you from joining at 13:00?
 No problem! Join us after your meeting and we will bring you up-to-date. We will also upload the material after the session.
 </p>
