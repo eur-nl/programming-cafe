@@ -36,7 +36,7 @@ Have you never programmed in R or any other language before?
 
 ## Programme
 - **11:00-11:10** Walk-in
-- **11:10-12:10** Live Coding 
+- **11:10-12:10** Live Coding. Find the script [here](https://eur-nl.github.io/rs_training/short_intro_r.html) 
 - **12:10-12:30** Break & Begin Lunch
 - **12:30-13:00** Time to eat, collaborate, ask question and try out your new skills
 
