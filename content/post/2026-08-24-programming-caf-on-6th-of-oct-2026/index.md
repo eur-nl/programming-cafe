@@ -2,11 +2,11 @@
 title: Programming Café on 6th of October 2026
 author: Package Build
 slug: programming-caf-on-6th-of-oct-2026
-categories: [news]
+categories: [archive]
 tags: []
 banner: /images/icon.jpg
 summary: "Back to Basics: Refresh Your R Skills"
-weight: 1
+weight: 110
 ---
 
 <img src= "/programming-cafe/images/icon_space.jpg" style = "width:20%;height:20%">

@@ -38,7 +38,7 @@ Have you never programmed in Python or any other language before?
 
 ## Programme
 - **13:00-13:10** Walk-in
-- **13:10-14:10** Live Coding 
+- **13:10-14:10** Live Coding. Find the script [here](https://eur-nl.github.io/rs_training/short_intro_python.html)  
 - **14:10-14:30** Break & Begin Lunch
 - **14:30-15:00** Time to eat, collaborate, ask question and try out your new skills
 
@@ -46,7 +46,7 @@ Have you never programmed in Python or any other language before?
 Bring your own laptop.
 
 ### Registration
-Please register [here](https://eur-nl.libcal.com).
+Please register [here](https://eur-nl.libcal.com/event/4582982).
 
 ### Extras
 We will offer some snacks!
